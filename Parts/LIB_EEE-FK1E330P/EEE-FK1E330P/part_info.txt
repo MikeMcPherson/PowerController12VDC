@@ -1,0 +1,9 @@
+Manufacturer=Panasonic
+PartNumber=EEE-FK1E330P
+PartCategory=Capacitor Polarised
+PackageCategory=Capacitor Al Electrolytic
+PinCount=2
+Version=2.1
+Released=2019-03-05 07:26:02
+Downloaded=2020-12-08 19:06:50
+3D=Y

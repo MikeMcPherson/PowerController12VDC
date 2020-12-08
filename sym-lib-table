@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name TPSM84209RKHT)(type Legacy)(uri C:/Users/kq9p/Desktop/TPSM84209RKHT/TPSM84209RKHT.lib)(options "")(descr ""))
+  (lib (name GRM033R71E331KA01D)(type Legacy)(uri "C:/Users/kq9p/Documents/KiCad Projects/PowerController12VDC/Parts/GRM033R71E331KA01D/GRM033R71E331KA01D.lib")(options "")(descr ""))
+  (lib (name LQM18PNR47NC0L)(type Legacy)(uri ${KIPRJMOD}/Parts/LQM18PNR47NC0L/LQM18PNR47NC0L.lib)(options "")(descr ""))
+  (lib (name C3216X6S1V106K160AC)(type Legacy)(uri ${KIPRJMOD}/Parts/C3216X6S1V106K160AC/C3216X6S1V106K160AC.lib)(options "")(descr ""))
+  (lib (name ERJ-3RSFR10V)(type Legacy)(uri ${KIPRJMOD}/Parts/ERJ-3RSFR10V/ERJ-3RSFR10V.lib)(options "")(descr ""))
+  (lib (name EEE-FK1E330P)(type Legacy)(uri ${KIPRJMOD}/Parts/LIB_EEE-FK1E330P/EEE-FK1E330P/KiCad/EEE-FK1E330P.lib)(options "")(descr ""))
+)
