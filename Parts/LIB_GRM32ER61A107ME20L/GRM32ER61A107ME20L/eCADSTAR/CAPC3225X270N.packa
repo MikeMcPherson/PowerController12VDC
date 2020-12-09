@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "GRM32ER61A107ME20L"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-08-27-09:06:59)
+    (mountForm default
+        (footprintRef "CAPC3225X270N")
+        (spec "System")
+    )
+)

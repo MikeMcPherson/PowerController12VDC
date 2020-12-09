@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GRM32ER61A107ME20L
+D Murata 1210 (3225M) 100uF Multilayer Ceramic Capacitor MLCC 10V dc +/-20% SMD GRM32ER61A107ME20L
+K
+F https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER61A107ME20%23
+$ENDCMP
+#
+#End Doc Library

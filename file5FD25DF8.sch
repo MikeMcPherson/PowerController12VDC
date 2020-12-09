@@ -1,0 +1,287 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title "KQ9P Power Controller 12VDC"
+Date "2020-12-08"
+Rev "V1"
+Comp "KQ9P"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TPSM84209RKHT:TPSM84209RKHT U?
+U 1 1 5FD35C29
+P 5700 3500
+AR Path="/5FD35C29" Ref="U?"  Part="1" 
+AR Path="/5FD25DF9/5FD35C29" Ref="U1"  Part="1" 
+F 0 "U1" H 6450 2650 50  0000 C CNN
+F 1 "TPSM84209RKHT" H 6700 2550 50  0000 C CNN
+F 2 "VREG_TPSM84209RKHT" H 5700 3500 50  0001 L BNN
+F 3 "" H 5700 3500 50  0001 L BNN
+F 4 "TPSM84209RKHT" H 5700 3500 50  0001 L BNN "MP"
+F 5 "Unavailable" H 5700 3500 50  0001 L BNN "AVAILABILITY"
+F 6 "Texas Instruments" H 5700 3500 50  0001 L BNN "MF"
+F 7 "4.5V-28V Input, 1.2V-6.0V Output, 2.5-A Power Module 9-QFN-FCMOD -40 to 85" H 5700 3500 50  0001 L BNN "DESCRIPTION"
+F 8 "PowerQFN-9 Texas Instruments" H 5700 3500 50  0001 L BNN "PACKAGE"
+F 9 "Manufacturer Recommendations" H 5700 3500 50  0001 L BNN "STANDARD"
+F 10 "None" H 5700 3500 50  0001 L BNN "PRICE"
+F 11 "C" H 5700 3500 50  0001 L BNN "PARTREV"
+	1    5700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GRM033R71E331KA01D:GRM033R71E331KA01D C?
+U 1 1 5FD35C2F
+P 7550 3200
+AR Path="/5FD35C2F" Ref="C?"  Part="1" 
+AR Path="/5FD25DF9/5FD35C2F" Ref="C4"  Part="1" 
+F 0 "C4" H 7600 3440 50  0000 C CNN
+F 1 "GRM033R71E331KA01D" H 7600 3349 50  0000 C CNN
+F 2 "CAPC0603X33N" H 7550 3200 50  0001 L BNN
+F 3 "" H 7550 3200 50  0001 L BNN
+	1    7550 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L LQM18PNR47NC0L:LQM18PNR47NC0L L?
+U 1 1 5FD35C35
+P 2200 2800
+AR Path="/5FD35C35" Ref="L?"  Part="1" 
+AR Path="/5FD25DF9/5FD35C35" Ref="L1"  Part="1" 
+F 0 "L1" H 2200 2981 50  0000 C CNN
+F 1 "LQM18PNR47NC0L" H 2200 2890 50  0000 C CNN
+F 2 "INDC1608X55N" H 2200 2800 50  0001 L BNN
+F 3 "" H 2200 2800 50  0001 L BNN
+	1    2200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2800 1900 2800
+$Comp
+L C3216X6S1V106K160AC:C3216X6S1V106K160AC C?
+U 1 1 5FD35C48
+P 1900 3700
+AR Path="/5FD35C48" Ref="C?"  Part="1" 
+AR Path="/5FD25DF9/5FD35C48" Ref="C1"  Part="1" 
+F 0 "C1" V 1904 3803 50  0000 L CNN
+F 1 "C3216X6S1V106K160AC" V 1995 3803 50  0000 L CNN
+F 2 "CAPC3216X180N" H 1900 3700 50  0001 L BNN
+F 3 "" H 1900 3700 50  0001 L BNN
+	1    1900 3700
+	0    1    1    0   
+$EndComp
+Connection ~ 1900 2800
+$Comp
+L ERJ-3RSFR10V:ERJ-3RSFR10V R?
+U 1 1 5FD35C4F
+P 3200 3450
+AR Path="/5FD35C4F" Ref="R?"  Part="1" 
+AR Path="/5FD25DF9/5FD35C4F" Ref="R1"  Part="1" 
+F 0 "R1" V 3154 3555 50  0000 L CNN
+F 1 "ERJ-3RSFR10V" V 3245 3555 50  0000 L CNN
+F 2 "RESC1608X55N" H 3200 3450 50  0001 L BNN
+F 3 "" H 3200 3450 50  0001 L BNN
+	1    3200 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 2800 3200 2800
+Wire Wire Line
+	3200 3050 3200 2800
+Connection ~ 3200 2800
+Wire Wire Line
+	3200 2800 4200 2800
+Wire Wire Line
+	1600 4600 1900 4600
+Wire Wire Line
+	1900 2800 1900 3600
+Wire Wire Line
+	1900 3900 1900 4600
+Connection ~ 1900 4600
+$Comp
+L EEE-FK1E330P:EEE-FK1E330P C?
+U 1 1 5FD35C66
+P 3200 4000
+AR Path="/5FD35C66" Ref="C?"  Part="1" 
+AR Path="/5FD25DF9/5FD35C66" Ref="C2"  Part="1" 
+F 0 "C2" V 3404 4130 50  0000 L CNN
+F 1 "EEE-FK1E330P" V 3495 4130 50  0000 L CNN
+F 2 "CAPAE660X610N" H 3550 4050 50  0001 L CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 3550 3950 50  0001 L CNN
+F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 3550 3850 50  0001 L CNN "Description"
+F 5 "6.1" H 3550 3750 50  0001 L CNN "Height"
+F 6 "Panasonic" H 3550 3650 50  0001 L CNN "Manufacturer_Name"
+F 7 "EEE-FK1E330P" H 3550 3550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3550 3450 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 3550 3350 50  0001 L CNN "Arrow Price/Stock"
+F 10 "667-EEE-FK1E330P" H 3550 3250 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 3550 3150 50  0001 L CNN "Mouser Price/Stock"
+	1    3200 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 4600 3200 4600
+Wire Wire Line
+	3200 3850 3200 4000
+Wire Wire Line
+	3200 4500 3200 4600
+Connection ~ 3200 4600
+Wire Wire Line
+	3200 4600 4200 4600
+$Comp
+L C3216X6S1V106K160AC:C3216X6S1V106K160AC C?
+U 1 1 5FD35C71
+P 4200 3700
+AR Path="/5FD35C71" Ref="C?"  Part="1" 
+AR Path="/5FD25DF9/5FD35C71" Ref="C3"  Part="1" 
+F 0 "C3" V 4204 3803 50  0000 L CNN
+F 1 "C3216X6S1V106K160AC" V 4295 3803 50  0000 L CNN
+F 2 "CAPC3216X180N" H 4200 3700 50  0001 L BNN
+F 3 "" H 4200 3700 50  0001 L BNN
+	1    4200 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 3600 4200 2800
+Connection ~ 4200 2800
+Wire Wire Line
+	4200 3900 4200 4600
+Connection ~ 4200 4600
+$Comp
+L CRCW040210K0FKED:CRCW040210K0FKED R?
+U 1 1 5FD35C85
+P 8150 2800
+AR Path="/5FD35C85" Ref="R?"  Part="1" 
+AR Path="/5FD25DF9/5FD35C85" Ref="R2"  Part="1" 
+F 0 "R2" V 8454 2888 50  0000 L CNN
+F 1 "CRCW040210K0FKED" V 8545 2888 50  0000 L CNN
+F 2 "RESC1005X40N" H 8700 2850 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 8700 2750 50  0001 L CNN
+F 4 "CRCW0402 Resistor T/R 0.063W,1%,10K Vishay CRCW Series Thick Film Surface Mount Resistor 0402 Case 10k +/-1% 0.063W +/-100ppm/C" H 8700 2650 50  0001 L CNN "Description"
+F 5 "0.4" H 8700 2550 50  0001 L CNN "Height"
+F 6 "Vishay" H 8700 2450 50  0001 L CNN "Manufacturer_Name"
+F 7 "CRCW040210K0FKED" H 8700 2350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "CRCW040210K0FKED" H 8700 2250 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/crcw040210k0fked/vishay" H 8700 2150 50  0001 L CNN "Arrow Price/Stock"
+F 10 "71-CRCW0402-10K-E3" H 8700 2050 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Vishay-Dale/CRCW040210K0FKED?qs=rlE3Te1NifyN3e8vvxacSw%3D%3D" H 8700 1950 50  0001 L CNN "Mouser Price/Stock"
+	1    8150 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L RC0603FR-072K2L:RC0603FR-072K2L R?
+U 1 1 5FD35C93
+P 8150 3750
+AR Path="/5FD35C93" Ref="R?"  Part="1" 
+AR Path="/5FD25DF9/5FD35C93" Ref="R3"  Part="1" 
+F 0 "R3" V 8454 3838 50  0000 L CNN
+F 1 "RC0603FR-072K2L" V 8545 3838 50  0000 L CNN
+F 2 "RESC1608X55N" H 8700 3800 50  0001 L CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC0603_51_RoHS_L_v5.pdf" H 8700 3700 50  0001 L CNN
+F 4 "YAGEO (PHYCOMP) - RC0603FR-072K2L. - RES, THICK FILM, 2K2, 1%, 0.1W, 0603" H 8700 3600 50  0001 L CNN "Description"
+F 5 "0.55" H 8700 3500 50  0001 L CNN "Height"
+F 6 "YAGEO (PHYCOMP)" H 8700 3400 50  0001 L CNN "Manufacturer_Name"
+F 7 "RC0603FR-072K2L" H 8700 3300 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "RC0603FR-072K2L" H 8700 3200 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/rc0603fr-072k2l/yageo" H 8700 3100 50  0001 L CNN "Arrow Price/Stock"
+F 10 "603-RC0603FR-072K2L" H 8700 3000 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Yageo/RC0603FR-072K2L?qs=diQw95jMAeOQmNpe2MM%252BPw%3D%3D" H 8700 2900 50  0001 L CNN "Mouser Price/Stock"
+	1    8150 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 4450 8150 4600
+Connection ~ 8150 4600
+Wire Wire Line
+	8150 4600 9350 4600
+Wire Wire Line
+	8150 3500 8150 3700
+Wire Wire Line
+	7000 2800 7550 2800
+Wire Wire Line
+	7550 3100 7550 2800
+Connection ~ 7550 2800
+Wire Wire Line
+	7550 2800 8150 2800
+Connection ~ 8150 3700
+Wire Wire Line
+	8150 3700 8150 3750
+Wire Wire Line
+	7550 3400 7550 3700
+Wire Wire Line
+	7550 3700 8150 3700
+$Comp
+L GRM32ER61A107ME20L:GRM32ER61A107ME20L C?
+U 1 1 5FD35CB3
+P 9350 3450
+AR Path="/5FD35CB3" Ref="C?"  Part="1" 
+AR Path="/5FD25DF9/5FD35CB3" Ref="C5"  Part="1" 
+F 0 "C5" V 9554 3578 50  0000 L CNN
+F 1 "GRM32ER61A107ME20L" V 9645 3578 50  0000 L CNN
+F 2 "CAPC3225X270N" H 9700 3500 50  0001 L CNN
+F 3 "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER61A107ME20%23" H 9700 3400 50  0001 L CNN
+F 4 "Murata 1210 (3225M) 100uF Multilayer Ceramic Capacitor MLCC 10V dc +/-20% SMD GRM32ER61A107ME20L" H 9700 3300 50  0001 L CNN "Description"
+F 5 "2.7" H 9700 3200 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 9700 3100 50  0001 L CNN "Manufacturer_Name"
+F 7 "GRM32ER61A107ME20L" H 9700 3000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "GRM32ER61A107ME20L" H 9700 2900 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/grm32er61a107me20l/murata-manufacturing" H 9700 2800 50  0001 L CNN "Arrow Price/Stock"
+F 10 "81-GRM32ER61A107ME0L" H 9700 2700 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM32ER61A107ME20L?qs=QRVci0nWsCb7NlWFDLlBHA%3D%3D" H 9700 2600 50  0001 L CNN "Mouser Price/Stock"
+	1    9350 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 3950 9350 4600
+Wire Wire Line
+	8150 2800 9350 2800
+Connection ~ 8150 2800
+Wire Wire Line
+	9350 3450 9350 2800
+Text HLabel 9350 2450 0    50   Output ~ 0
+PS+3V3
+Wire Wire Line
+	9350 2450 9350 2800
+Connection ~ 9350 2800
+Text HLabel 9350 4900 0    50   Output ~ 0
+PSGND
+Wire Wire Line
+	9350 4900 9350 4600
+Connection ~ 9350 4600
+Text HLabel 1550 2800 0    50   Input ~ 0
+PS12Vin
+Text HLabel 1600 4600 0    50   Input ~ 0
+PSGNDin
+Text Label 8750 2800 0    50   ~ 0
++3V3
+Text Label 8800 4600 0    50   ~ 0
+GND
+Wire Wire Line
+	4200 4600 6300 4600
+Wire Wire Line
+	6900 3800 6900 3900
+Wire Wire Line
+	6300 4500 6300 4600
+Connection ~ 6300 4600
+Wire Wire Line
+	6300 4600 8150 4600
+Wire Wire Line
+	6300 2800 6300 2900
+Wire Wire Line
+	4200 2800 6300 2800
+Wire Wire Line
+	6900 3500 7000 3500
+Wire Wire Line
+	7000 3500 7000 2800
+NoConn ~ 5700 3500
+NoConn ~ 5700 3700
+NoConn ~ 5700 3800
+Wire Wire Line
+	6900 3700 7550 3700
+Connection ~ 7550 3700
+$EndSCHEMATC

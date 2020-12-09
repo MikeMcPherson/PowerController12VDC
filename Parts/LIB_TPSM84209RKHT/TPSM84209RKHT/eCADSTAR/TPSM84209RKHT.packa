@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "TPSM84209RKHT"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2018-11-06-13:34:12)
+    (mountForm default
+        (footprintRef "TPSM84209RKHT")
+        (spec "System")
+    )
+)

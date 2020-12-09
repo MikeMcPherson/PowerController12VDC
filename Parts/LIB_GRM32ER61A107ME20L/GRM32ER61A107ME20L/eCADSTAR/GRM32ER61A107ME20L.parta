@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_300218"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-06-09-12:41:14)
+    (utime 2020-09-07-16:49:22)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "GRM32ER61A107ME20L")
+)
+
+
+(pinAssign "ECS_300218"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-06-09-12:41:14)
+    (utime 2020-09-07-16:49:22)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_300218")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "GRM32ER61A107ME20L")
+)
+
+
+(part "GRM32ER61A107ME20L"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-06-09-12:41:14)
+    (utime 2020-09-07-16:49:22)
+    (packageRef "GRM32ER61A107ME20L")
+    (pinAssignRef "ECS_300218")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "Murata 1210 (3225M) 100uF Multilayer Ceramic Capacitor MLCC 10V dc +/-20% SMD GRM32ER61A107ME20L")
+    (property "Manufacturer_Name" "Murata Electronics")
+    (property "Manufacturer_Part_Number" "GRM32ER61A107ME20L")
+    (property "Arrow_Part_Number" "GRM32ER61A107ME20L")
+    (property "Arrow_Price/Stock" "https://www.arrow.com/en/products/grm32er61a107me20l/murata-manufacturing")
+    (property "Mouser_Part_Number" "81-GRM32ER61A107ME0L")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM32ER61A107ME20L?qs=QRVci0nWsCb7NlWFDLlBHA%3D%3D")
+    (property "Datasheet_Link" "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER61A107ME20%23")
+    (property "compAreaTopHeight" 2.7)
+)
+
+

@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "TPSM84209RKHT"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "TPSM84209RKHT")
+        (spec "default")
+    )
+)

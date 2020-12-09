@@ -1,0 +1,18 @@
+.GRM32ER61A107ME20L :1 ;Murata 1210 (3225M) 100uF Multilayer Ceramic Capacitor MLCC 10V dc +/-20% SMD GRM32ER61A107ME20L
+CAPC3225X270N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN GRM32ER61A107ME20L
+~!Manufacturer_Name (Murata Electronics)
+~!Manufacturer_Part_Number (GRM32ER61A107ME20L)
+~!Arrow Part Number (GRM32ER61A107ME20L)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/grm32er61a107me20l/murata-manufacturing)
+~!Mouser Part Number (81-GRM32ER61A107ME0L)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM32ER61A107ME20L?qs=QRVci0nWsCb7NlWFDLlBHA%3D%3D)
+~!Link Datasheet (https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER61A107ME20%23)
+~!Height (2.7mm)
+~!3D_Model (GRM32ER61A107ME20L)
+GRM32ER61A107ME20L
+1.1!U 2.1!U 

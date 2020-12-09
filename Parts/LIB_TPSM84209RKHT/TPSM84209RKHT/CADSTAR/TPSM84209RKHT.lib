@@ -1,0 +1,17 @@
+.TPSM84209RKHT :1 ;4.5-V to 28-V input, 1.2-V to 6-V output, 2.5-A power module
+TPSM84209RKHT
+*STM IC
+*NGS
+*PLB 1="FB" 2="VIN" 3="VOUT" 4="SW_1" 5="SW_2" 6="DNC_1" 7="DNC_2" 8="GND" 9="EN"
+*MXP 9
+*DFN TPSM84209RKHT
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (TPSM84209RKHT)
+~!Arrow Part Number (TPSM84209RKHT)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/tpsm84209rkht/texas-instruments)
+~!Mouser Part Number (595-TPSM84209RKHT)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPSM84209RKHT?qs=rrS6PyfT74fnmFkKpetMQQ%3D%3D)
+~!Link Datasheet (http://www.ti.com/lit/gpn/tpsm84209)
+~!Height (2.1mm)
+TPSM84209RKHT
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 
