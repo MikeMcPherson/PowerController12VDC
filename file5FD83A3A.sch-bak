@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 3 4
+Sheet 3 5
 Title "KQ9P Power Controller 12VDC"
 Date "2020-12-08"
 Rev "V1"

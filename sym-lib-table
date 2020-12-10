@@ -9,4 +9,7 @@
   (lib (name RC0603FR-072K2L)(type Legacy)(uri ${KIPRJMOD}/Parts/LIB_RC0603FR-072K2L/RC0603FR-072K2L/KiCad/RC0603FR-072K2L.lib)(options "")(descr ""))
   (lib (name GRM32ER61A107ME20L)(type Legacy)(uri ${KIPRJMOD}/Parts/LIB_GRM32ER61A107ME20L/GRM32ER61A107ME20L/KiCad/GRM32ER61A107ME20L.lib)(options "")(descr ""))
   (lib (name TPSM84209RKHT)(type Legacy)(uri ${KIPRJMOD}/Parts/LIB_TPSM84209RKHT/TPSM84209RKHT/KiCad/TPSM84209RKHT.lib)(options "")(descr ""))
+  (lib (name 2020-12-10_18-38-26)(type Legacy)(uri ${KIPRJMOD}/Parts/ul_LAN8742ACZTR/KiCAD/2020-12-10_18-38-26/2020-12-10_18-38-26.lib)(options "")(descr ""))
+  (lib (name H1102NL)(type Legacy)(uri ${KIPRJMOD}/Parts/LIB_H1102NL/H1102NL/KiCad/H1102NL.lib)(options "")(descr ""))
+  (lib (name 2020-12-10_19-10-13)(type Legacy)(uri ${KIPRJMOD}/Parts/RJ45jack-ul_117347951/KiCAD/2020-12-10_19-10-13/2020-12-10_19-10-13.lib)(options "")(descr ""))
 )
