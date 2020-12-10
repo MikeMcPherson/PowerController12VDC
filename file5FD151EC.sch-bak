@@ -1,0 +1,177 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title "KQ9P Power Controller 12VDC"
+Date "2020-12-08"
+Rev "V1"
+Comp "KQ9P"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J3
+U 1 1 5FD1F74B
+P 2000 6500
+F 0 "J3" H 1557 6546 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 1557 6455 50  0000 R CNN
+F 2 "" H 2000 6500 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 1650 5250 50  0001 C CNN
+	1    2000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5FD1F751
+P 2000 7100
+F 0 "#PWR03" H 2000 6850 50  0001 C CNN
+F 1 "GND" H 2005 6927 50  0000 C CNN
+F 2 "" H 2000 7100 50  0001 C CNN
+F 3 "" H 2000 7100 50  0001 C CNN
+	1    2000 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5FD1F757
+P 1900 7100
+F 0 "#PWR01" H 1900 6850 50  0001 C CNN
+F 1 "GND" H 1905 6927 50  0000 C CNN
+F 2 "" H 1900 7100 50  0001 C CNN
+F 3 "" H 1900 7100 50  0001 C CNN
+	1    1900 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 6200 3950 6200
+Wire Wire Line
+	2500 6400 2600 6400
+Wire Wire Line
+	2500 6500 2850 6500
+Wire Wire Line
+	2500 6600 3100 6600
+Wire Wire Line
+	2500 6700 3350 6700
+$Comp
+L Device:R_Small_US R5
+U 1 1 5FD1F762
+P 2600 5750
+F 0 "R5" H 2668 5796 50  0000 L CNN
+F 1 "10k" H 2668 5705 50  0000 L CNN
+F 2 "" H 2600 5750 50  0001 C CNN
+F 3 "~" H 2600 5750 50  0001 C CNN
+	1    2600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R6
+U 1 1 5FD1F768
+P 2850 5750
+F 0 "R6" H 2918 5796 50  0000 L CNN
+F 1 "10k" H 2918 5705 50  0000 L CNN
+F 2 "" H 2850 5750 50  0001 C CNN
+F 3 "~" H 2850 5750 50  0001 C CNN
+	1    2850 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R7
+U 1 1 5FD1F76E
+P 3100 5750
+F 0 "R7" H 3168 5796 50  0000 L CNN
+F 1 "10k" H 3168 5705 50  0000 L CNN
+F 2 "" H 3100 5750 50  0001 C CNN
+F 3 "~" H 3100 5750 50  0001 C CNN
+	1    3100 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R9
+U 1 1 5FD1F774
+P 3350 5750
+F 0 "R9" H 3418 5796 50  0000 L CNN
+F 1 "10k" H 3418 5705 50  0000 L CNN
+F 2 "" H 3350 5750 50  0001 C CNN
+F 3 "~" H 3350 5750 50  0001 C CNN
+	1    3350 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5650 2300 5650
+Wire Wire Line
+	2000 5650 2000 5900
+Connection ~ 2000 5900
+Wire Wire Line
+	2000 5900 2000 6000
+Wire Wire Line
+	2600 5650 2850 5650
+Connection ~ 2600 5650
+Wire Wire Line
+	2850 5650 3100 5650
+Connection ~ 2850 5650
+Wire Wire Line
+	3100 5650 3350 5650
+Connection ~ 3100 5650
+Wire Wire Line
+	2600 5850 2600 6400
+Connection ~ 2600 6400
+Wire Wire Line
+	2600 6400 3950 6400
+Wire Wire Line
+	2850 5850 2850 6500
+Connection ~ 2850 6500
+Wire Wire Line
+	2850 6500 3950 6500
+Wire Wire Line
+	3100 5850 3100 6600
+Connection ~ 3100 6600
+Wire Wire Line
+	3100 6600 3950 6600
+Wire Wire Line
+	3350 5850 3350 6700
+Connection ~ 3350 6700
+Wire Wire Line
+	3350 6700 3950 6700
+$Comp
+L power:VDD #PWR02
+U 1 1 5FD1F795
+P 2000 5500
+F 0 "#PWR02" H 2000 5350 50  0001 C CNN
+F 1 "VDD" H 2015 5673 50  0000 C CNN
+F 2 "" H 2000 5500 50  0001 C CNN
+F 3 "" H 2000 5500 50  0001 C CNN
+	1    2000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5500 2000 5650
+Connection ~ 2000 5650
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5FD7E250
+P 2300 5650
+F 0 "#FLG0105" H 2300 5725 50  0001 C CNN
+F 1 "PWR_FLAG" H 2300 5823 50  0000 C CNN
+F 2 "" H 2300 5650 50  0001 C CNN
+F 3 "~" H 2300 5650 50  0001 C CNN
+	1    2300 5650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 5650
+Wire Wire Line
+	2300 5650 2600 5650
+Text HLabel 3950 6200 2    50   Output ~ 0
+NRST
+Text HLabel 3950 6400 2    50   Output ~ 0
+TCK
+Text HLabel 3950 6500 2    50   Output ~ 0
+TMS
+Text HLabel 3950 6600 2    50   Output ~ 0
+TDO
+Text HLabel 3950 6700 2    50   Output ~ 0
+TDI
+$EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 4
 Title "KQ9P Power Controller 12VDC"
 Date "2020-12-08"
 Rev "V1"
@@ -97,7 +97,7 @@ Connection ~ 3200 2800
 Wire Wire Line
 	3200 2800 4200 2800
 Wire Wire Line
-	1600 4600 1900 4600
+	1550 4600 1900 4600
 Wire Wire Line
 	1900 2800 1900 3600
 Wire Wire Line
@@ -243,20 +243,8 @@ Wire Wire Line
 Connection ~ 8150 2800
 Wire Wire Line
 	9350 3450 9350 2800
-Text HLabel 9350 2450 0    50   Output ~ 0
-PS+3V3
-Wire Wire Line
-	9350 2450 9350 2800
 Connection ~ 9350 2800
-Text HLabel 9350 4900 0    50   Output ~ 0
-PSGND
-Wire Wire Line
-	9350 4900 9350 4600
 Connection ~ 9350 4600
-Text HLabel 1550 2800 0    50   Input ~ 0
-PS12Vin
-Text HLabel 1600 4600 0    50   Input ~ 0
-PSGNDin
 Text Label 8750 2800 0    50   ~ 0
 +3V3
 Text Label 8800 4600 0    50   ~ 0
@@ -284,4 +272,71 @@ NoConn ~ 5700 3800
 Wire Wire Line
 	6900 3700 7550 3700
 Connection ~ 7550 3700
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5FE1E454
+P 1000 3700
+F 0 "J1" H 918 3375 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 918 3466 50  0000 C CNN
+F 2 "" H 1000 3700 50  0001 C CNN
+F 3 "~" H 1000 3700 50  0001 C CNN
+	1    1000 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 3600 1550 3600
+Wire Wire Line
+	1550 3600 1550 2800
+Wire Wire Line
+	1200 3700 1550 3700
+Wire Wire Line
+	1550 3700 1550 4600
+$Comp
+L power:VDD #PWR04
+U 1 1 5FE213FA
+P 9750 2800
+F 0 "#PWR04" H 9750 2650 50  0001 C CNN
+F 1 "VDD" H 9765 2973 50  0000 C CNN
+F 2 "" H 9750 2800 50  0001 C CNN
+F 3 "" H 9750 2800 50  0001 C CNN
+	1    9750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5FE21883
+P 9800 4600
+F 0 "#PWR05" H 9800 4350 50  0001 C CNN
+F 1 "GND" H 9805 4427 50  0000 C CNN
+F 2 "" H 9800 4600 50  0001 C CNN
+F 3 "" H 9800 4600 50  0001 C CNN
+	1    9800 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2800 9750 2800
+Wire Wire Line
+	9800 4600 9350 4600
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5FE24C38
+P 9350 2800
+F 0 "#FLG01" H 9350 2875 50  0001 C CNN
+F 1 "PWR_FLAG" H 9350 2973 50  0000 C CNN
+F 2 "" H 9350 2800 50  0001 C CNN
+F 3 "~" H 9350 2800 50  0001 C CNN
+	1    9350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5FE25169
+P 9350 4600
+F 0 "#FLG02" H 9350 4675 50  0001 C CNN
+F 1 "PWR_FLAG" H 9350 4773 50  0000 C CNN
+F 2 "" H 9350 4600 50  0001 C CNN
+F 3 "~" H 9350 4600 50  0001 C CNN
+	1    9350 4600
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
