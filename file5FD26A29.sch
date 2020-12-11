@@ -38,31 +38,113 @@ $EndComp
 $Comp
 L H1102NL:H1102NL T?
 U 1 1 5FD29DFA
-P 8750 4550
-F 0 "T?" H 9300 4815 50  0000 C CNN
-F 1 "H1102NL" H 9300 4724 50  0000 C CNN
-F 2 "SOIC127P940X597-16N" H 9700 4650 50  0001 L CNN
-F 3 "https://productfinder.pulseeng.com/products/datasheets/h1102nl.pdf" H 9700 4550 50  0001 L CNN
-F 4 "PULSE ELECTRONICS - H1102NL - TRANSFORMER, 1:1, 1PORT, 100BASE-TX, SMT" H 9700 4450 50  0001 L CNN "Description"
-F 5 "5.97" H 9700 4350 50  0001 L CNN "Height"
-F 6 "Pulse" H 9700 4250 50  0001 L CNN "Manufacturer_Name"
-F 7 "H1102NL" H 9700 4150 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "H1102NL" H 9700 4050 50  0001 L CNN "Arrow Part Number"
-F 9 "https://www.arrow.com/en/products/h1102nl/pulse-electronics-corporation" H 9700 3950 50  0001 L CNN "Arrow Price/Stock"
-F 10 "673-H1102NL" H 9700 3850 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/H1102NL?qs=EKu32SdDin%2FHU33L94JZxw%3D%3D" H 9700 3750 50  0001 L CNN "Mouser Price/Stock"
-	1    8750 4550
+P 9850 5250
+F 0 "T?" H 10400 5515 50  0000 C CNN
+F 1 "H1102NL" H 10400 5424 50  0000 C CNN
+F 2 "SOIC127P940X597-16N" H 10800 5350 50  0001 L CNN
+F 3 "https://productfinder.pulseeng.com/products/datasheets/h1102nl.pdf" H 10800 5250 50  0001 L CNN
+F 4 "PULSE ELECTRONICS - H1102NL - TRANSFORMER, 1:1, 1PORT, 100BASE-TX, SMT" H 10800 5150 50  0001 L CNN "Description"
+F 5 "5.97" H 10800 5050 50  0001 L CNN "Height"
+F 6 "Pulse" H 10800 4950 50  0001 L CNN "Manufacturer_Name"
+F 7 "H1102NL" H 10800 4850 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "H1102NL" H 10800 4750 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/h1102nl/pulse-electronics-corporation" H 10800 4650 50  0001 L CNN "Arrow Price/Stock"
+F 10 "673-H1102NL" H 10800 4550 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/H1102NL?qs=EKu32SdDin%2FHU33L94JZxw%3D%3D" H 10800 4450 50  0001 L CNN "Mouser Price/Stock"
+	1    9850 5250
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2020-12-10_19-10-13:1-1734795-1 J?
-U 1 1 5FD30F50
-P 12950 4950
-F 0 "J?" H 13478 4553 60  0000 L CNN
-F 1 "1-1734795-1" H 13478 4447 60  0000 L CNN
-F 2 "CONN12_1-1734795-1_TEC" H 13350 4090 60  0001 C CNN
-F 3 "" H 12950 4950 60  0000 C CNN
-	1    12950 4950
+L Device:C_Small C?
+U 1 1 5FD32DB4
+P 6200 7850
+F 0 "C?" H 6292 7896 50  0000 L CNN
+F 1 "100nF" H 6292 7805 50  0000 L CNN
+F 2 "" H 6200 7850 50  0001 C CNN
+F 3 "~" H 6200 7850 50  0001 C CNN
+	1    6200 7850
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FD339FE
+P 6650 7600
+F 0 "C?" H 6742 7646 50  0000 L CNN
+F 1 "100nF" H 6742 7555 50  0000 L CNN
+F 2 "" H 6650 7600 50  0001 C CNN
+F 3 "~" H 6650 7600 50  0001 C CNN
+	1    6650 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FD33C45
+P 7100 7850
+F 0 "C?" H 7192 7896 50  0000 L CNN
+F 1 "10uF" H 7192 7805 50  0000 L CNN
+F 2 "" H 7100 7850 50  0001 C CNN
+F 3 "~" H 7100 7850 50  0001 C CNN
+	1    7100 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 5650 7550 5650
+Wire Wire Line
+	7550 5650 7550 7350
+Wire Wire Line
+	7550 7350 7100 7350
+Wire Wire Line
+	6200 7750 6200 7350
+Wire Wire Line
+	6650 7500 6650 7350
+Connection ~ 6650 7350
+Wire Wire Line
+	6650 7350 6200 7350
+Wire Wire Line
+	7100 7750 7100 7350
+Connection ~ 7100 7350
+Wire Wire Line
+	7100 7350 6650 7350
+Wire Wire Line
+	2650 5050 1900 5050
+Wire Wire Line
+	1900 5050 1900 7350
+Wire Wire Line
+	6200 7350 1900 7350
+Connection ~ 6200 7350
+Wire Wire Line
+	7100 7950 6650 7950
+Wire Wire Line
+	6650 7700 6650 7950
+Connection ~ 6650 7950
+Wire Wire Line
+	6650 7950 6200 7950
+$Comp
+L power:GND #PWR?
+U 1 1 5FD36E57
+P 6200 8050
+F 0 "#PWR?" H 6200 7800 50  0001 C CNN
+F 1 "GND" H 6205 7877 50  0000 C CNN
+F 2 "" H 6200 8050 50  0001 C CNN
+F 3 "" H 6200 8050 50  0001 C CNN
+	1    6200 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 8050 6200 7950
+Connection ~ 6200 7950
+$Comp
+L 6339191-4:6339191-4 J?
+U 1 1 5FD3947F
+P 13050 5200
+F 0 "J?" H 12822 5104 50  0000 R CNN
+F 1 "6339191-4" H 12822 5195 50  0000 R CNN
+F 2 "TE_6339191-4" H 13050 5200 50  0001 L BNN
+F 3 "" H 13050 5200 50  0001 L BNN
+F 4 "E3" H 13050 5200 50  0001 L BNN "PARTREV"
+F 5 "TE Connectivity" H 13050 5200 50  0001 L BNN "MANUFACTURER"
+F 6 "Manufacturer Recommendation" H 13050 5200 50  0001 L BNN "STANDARD"
+	1    13050 5200
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
