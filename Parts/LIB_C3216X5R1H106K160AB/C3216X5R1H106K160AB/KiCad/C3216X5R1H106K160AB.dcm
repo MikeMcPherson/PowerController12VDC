@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C3216X5R1H106K160AB
+D 1206 X5R ceramic capacitor 10uF 50V TDK 1206 C 10F Ceramic Multilayer Capacitor, 50 V dc X5R Dielectric +/-10% SMD
+K
+F https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf
+$ENDCMP
+#
+#End Doc Library

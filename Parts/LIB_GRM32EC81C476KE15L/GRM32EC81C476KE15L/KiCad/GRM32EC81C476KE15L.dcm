@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GRM32EC81C476KE15L
+D Murata 1210 GRM 47uF Ceramic Multilayer Capacitor, 16 V dc, +105C, X6S Dielectric, +/-10% SMD
+K
+F http://psearch.en.murata.com/capacitor/product/GRM32ER71E226KE15%23.pdf
+$ENDCMP
+#
+#End Doc Library

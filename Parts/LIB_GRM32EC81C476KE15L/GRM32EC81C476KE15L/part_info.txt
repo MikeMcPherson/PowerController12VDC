@@ -1,0 +1,9 @@
+Manufacturer=Murata Electronics
+PartNumber=GRM32EC81C476KE15L
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=1.1
+Released=2017-08-10 16:09:56
+Downloaded=2020-12-12 04:27:28
+3D=Y
