@@ -1,9 +1,0 @@
-Manufacturer=YAGEO (PHYCOMP)
-PartNumber=RC0603FR-072K2L
-PartCategory=Resistor
-PackageCategory=Resistor Chip
-PinCount=2
-Version=2.1
-Released=2016-10-26 11:18:04
-Downloaded=2020-12-09 00:33:19
-3D=Y

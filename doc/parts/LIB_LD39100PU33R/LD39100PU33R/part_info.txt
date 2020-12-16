@@ -1,9 +1,0 @@
-Manufacturer=STMicroelectronics
-PartNumber=LD39100PU33R
-PartCategory=Integrated Circuit
-PackageCategory=Small Outline No-lead
-PinCount=7
-Version=1.1
-Released=2019-09-08 10:57:39
-Downloaded=2020-12-12 04:41:13
-3D=Y

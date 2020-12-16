@@ -1,9 +1,0 @@
-Manufacturer=TDK
-PartNumber=C3216X5R1H106K160AB
-PartCategory=Capacitor
-PackageCategory=Capacitor Chip Non-polarised
-PinCount=2
-Version=4.1
-Released=2016-02-09 10:20:38
-Downloaded=2020-12-12 04:01:24
-3D=Y

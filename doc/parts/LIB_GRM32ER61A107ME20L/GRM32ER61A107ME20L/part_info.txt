@@ -1,9 +1,0 @@
-Manufacturer=Murata Electronics
-PartNumber=GRM32ER61A107ME20L
-PartCategory=Capacitor
-PackageCategory=Capacitor Chip Non-polarised
-PinCount=2
-Version=4.1
-Released=2017-06-09 12:41:14
-Downloaded=2020-12-09 00:36:53
-3D=Y
