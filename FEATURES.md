@@ -1,5 +1,5 @@
 # KQ9P Power Controller 12 VDC Features
-This project is an attempts to apply the latest power management, microcontroller, and IoT technologies in a state-of-the-art remotely-manageable power distribution device for amateur radio.
+This project attempts to apply the latest power management, microcontroller, and IoT technologies in a state-of-the-art, remotely-manageable power distribution device for amateur radio.
 ## Features
 - Eight (8) Anderson Powerpole outputs, individually switchable locally and remotely
 - Anderson Powerpole input
