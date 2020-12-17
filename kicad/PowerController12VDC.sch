@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "KQ9P Power Controller 12VDC"
 Date "2020-12-08"
 Rev "V1"
@@ -62,5 +62,11 @@ F3 "TCK" O R 4700 5250 50
 F4 "TMS" O R 4700 5350 50 
 F5 "TDO" O R 4700 5450 50 
 F6 "TDI" O R 4700 5550 50 
+$EndSheet
+$Sheet
+S 4500 1050 3700 2200
+U 5FDA5732
+F0 "Equipment Power Buck Boost Regulator" 50
+F1 "file5FDA5731.sch" 50
 $EndSheet
 $EndSCHEMATC
