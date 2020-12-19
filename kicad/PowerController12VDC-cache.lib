@@ -886,6 +886,56 @@ X I/O4 6 400 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# SamacSys_Parts_16SVF560M
+#
+DEF SamacSys_Parts_16SVF560M C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "SamacSys_Parts_16SVF560M" 350 150 50 H V L CNN
+F2 "CAPAE830X1200N" 350 50 50 H I L CNN
+F3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Capacitors%20PDFs/SVF_Series_DS.pdf" 350 -50 50 H I L CNN
+F4 "Aluminum Organic Polymer Capacitors 560uf 16volts 4.95A OS-CON Polymer" 350 -150 50 H I L CNN "Description"
+F5 "12" 350 -250 50 H I L CNN "Height"
+F6 "Panasonic" 350 -350 50 H I L CNN "Manufacturer_Name"
+F7 "16SVF560M" 350 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "16SVF560M" 350 -550 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/16svf560m/panasonic" 350 -650 50 H I L CNN "Arrow Price/Stock"
+F10 "667-16SVF560M" 350 -750 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.co.uk/ProductDetail/Panasonic/16SVF560M/?qs=KTDjhDDUMAmQ85MU40IRZQ%3D%3D" 350 -850 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 160 70 160 30 N
+P 2 0 1 6 180 50 140 50 N
+P 2 0 1 6 300 0 400 0 N
+P 5 0 1 6 200 100 200 -100 230 -100 230 100 200 100 N
+P 5 0 1 10 300 100 300 -100 270 -100 270 100 300 100 F
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 500 0 100 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_C3216X5R1C476M160AB
+#
+DEF SamacSys_Parts_C3216X5R1C476M160AB C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "SamacSys_Parts_C3216X5R1C476M160AB" 350 150 50 H V L CNN
+F2 "CAPC3216X180N" 350 50 50 H I L CNN
+F3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" 350 -50 50 H I L CNN
+F4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT CAP CER 47UF 16V X5R 20% 1206" 350 -150 50 H I L CNN "Description"
+F5 "1.8" 350 -250 50 H I L CNN "Height"
+F6 "TDK" 350 -350 50 H I L CNN "Manufacturer_Name"
+F7 "C3216X5R1C476M160AB" 350 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "810-C3216X5R1C476M" 350 -750 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X5R1C476M160AB/?qs=NRhsANhppD%252Bc%252BjuSy9SeLw%3D%3D" 350 -850 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 0 300 0 N
+P 2 0 1 6 280 100 280 -100 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # SamacSys_Parts_C3216X7R1H106K160AE
 #
 DEF SamacSys_Parts_C3216X7R1H106K160AE C 0 30 Y Y 1 F N
@@ -906,6 +956,46 @@ P 2 0 1 6 280 0 300 0 N
 P 2 0 1 6 280 100 280 -100 N
 X ~ 1 0 0 200 R 50 50 0 0 P
 X ~ 2 500 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_KRL6432E-C-R006-F-T1
+#
+DEF SamacSys_Parts_KRL6432E-C-R006-F-T1 R 0 30 Y Y 1 F N
+F0 "R" 550 250 50 H V L CNN
+F1 "SamacSys_Parts_KRL6432E-C-R006-F-T1" 550 150 50 H V L CNN
+F2 "RESC3163X50N" 550 50 50 H I L CNN
+F3 "http://www.mouser.com/datasheet/2/392/n_catalog_partition19_en-1114600.pdf" 550 -50 50 H I L CNN
+F4 "Current Sense Resistors - SMD 0.006 ohm 1% 3.0W" 550 -150 50 H I L CNN "Description"
+F5 "0.5" 550 -250 50 H I L CNN "Height"
+F6 "Susumu" 550 -350 50 H I L CNN "Manufacturer_Name"
+F7 "KRL6432E-C-R006-F-T1" 550 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "754-KRL6432ECR006FT1" 550 -750 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Susumu/KRL6432E-C-R006-F-T1/?qs=lc2O%252BfHJPVZeFQbLV4n%2Fcw%3D%3D" 550 -850 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_KRL6432E-M-R002-G-T1
+#
+DEF SamacSys_Parts_KRL6432E-M-R002-G-T1 R 0 30 Y Y 1 F N
+F0 "R" 550 250 50 H V L CNN
+F1 "SamacSys_Parts_KRL6432E-M-R002-G-T1" 550 150 50 H V L CNN
+F2 "RESC3163X70N" 550 50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/KRL6432E-M-R002-G-T1.pdf" 550 -50 50 H I L CNN
+F4 "Current Sense Resistors - SMD 3W 0.002ohm 1% 100ppm" 550 -150 50 H I L CNN "Description"
+F5 "0.7" 550 -250 50 H I L CNN "Height"
+F6 "Susumu" 550 -350 50 H I L CNN "Manufacturer_Name"
+F7 "KRL6432E-M-R002-G-T1" 550 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "754-KRL6432EMR002GT1" 550 -750 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Susumu/KRL6432E-M-R002-G-T1?qs=FG09h9tFCuAdqAj8G1SUEg%3D%3D" 550 -850 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #

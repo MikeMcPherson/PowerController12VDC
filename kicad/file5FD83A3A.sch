@@ -712,8 +712,8 @@ L MCU_ST_STM32F4:STM32F439VITx U?
 U 1 1 5FDCA4A8
 P 8500 6450
 AR Path="/5FDCA4A8" Ref="U?"  Part="1" 
-AR Path="/5FD83A3B/5FDCA4A8" Ref="U2"  Part="1" 
-F 0 "U2" H 8500 6500 50  0000 C CNN
+AR Path="/5FD83A3B/5FDCA4A8" Ref="U4"  Part="1" 
+F 0 "U4" H 8500 6500 50  0000 C CNN
 F 1 "STM32F439VITx" H 8500 6400 50  0000 C CNN
 F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 7800 3850 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00077036.pdf" H 8500 6450 50  0001 C CNN

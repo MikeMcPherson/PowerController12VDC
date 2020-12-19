@@ -14,10 +14,1336 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LT8390AHUFD#PBF:LT8390AHUFD#PBF IC?
+L BSC010N04LSI:BSC010N04LSI M12
+U 1 1 5FDB29E3
+P 6200 1900
+F 0 "M12" H 6700 2165 50  0000 C CNN
+F 1 "BSC010N04LSI" H 6700 2074 50  0000 C CNN
+F 2 "TDSON-8FL" H 7050 2000 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSC010N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552d84dc147dc" H 7050 1900 50  0001 L CNN
+F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 7050 1800 50  0001 L CNN "Description"
+F 5 "" H 7050 1700 50  0001 L CNN "Height"
+F 6 "Infineon" H 7050 1600 50  0001 L CNN "Manufacturer_Name"
+F 7 "BSC010N04LSI" H 7050 1500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 7050 1400 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 7050 1300 50  0001 L CNN "Arrow Price/Stock"
+F 10 "726-BSC010N04LSI" H 7050 1200 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC010N04LSI?qs=EUA%2Fg8wssK0bnYvE7pMDXw%3D%3D" H 7050 1100 50  0001 L CNN "Mouser Price/Stock"
+	1    6200 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11250 4000 9650 4000
+Wire Wire Line
+	9650 4000 9650 4650
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5FDC6F74
+P 900 5100
+F 0 "J4" H 818 4775 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 818 4866 50  0000 C CNN
+F 2 "" H 900 5100 50  0001 C CNN
+F 3 "~" H 900 5100 50  0001 C CNN
+	1    900  5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5FDC7975
+P 1100 5300
+F 0 "#PWR09" H 1100 5050 50  0001 C CNN
+F 1 "GND" H 1105 5127 50  0000 C CNN
+F 2 "" H 1100 5300 50  0001 C CNN
+F 3 "" H 1100 5300 50  0001 C CNN
+	1    1100 5300
+	1    0    0    -1  
+$EndComp
+Text Label 1300 5000 0    50   ~ 0
+Vin
+Wire Wire Line
+	1100 5000 1300 5000
+Wire Wire Line
+	1100 5100 1100 5300
+Text Label 850  1300 0    50   ~ 0
+Vin
+$Comp
+L power:GND #PWR010
+U 1 1 5FDD6DA1
+P 2300 2150
+F 0 "#PWR010" H 2300 1900 50  0001 C CNN
+F 1 "GND" H 2305 1977 50  0000 C CNN
+F 2 "" H 2300 2150 50  0001 C CNN
+F 3 "" H 2300 2150 50  0001 C CNN
+	1    2300 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1900 1250 2000
+Wire Wire Line
+	1250 2000 1500 2000
+Wire Wire Line
+	1500 1900 1500 2000
+Connection ~ 1500 2000
+Wire Wire Line
+	2000 1900 2000 2000
+Wire Wire Line
+	2000 2000 1750 2000
+Wire Wire Line
+	1750 1900 1750 2000
+Connection ~ 1750 2000
+$Comp
+L SamacSys_Parts:C3216X7R1H106K160AE C36
+U 1 1 5FDD6DBB
+P 2550 1400
+F 0 "C36" V 2754 1528 50  0000 L CNN
+F 1 "C3216X7R1H106K160AE" V 2845 1528 50  0001 L CNN
+F 2 "CAPC3216X180N" H 2900 1450 50  0001 L CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 2900 1350 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 50VDC 10uF 10% X7R SOFT TERM" H 2900 1250 50  0001 L CNN "Description"
+F 5 "1.8" H 2900 1150 50  0001 L CNN "Height"
+F 6 "TDK" H 2900 1050 50  0001 L CNN "Manufacturer_Name"
+F 7 "C3216X7R1H106K160AE" H 2900 950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 2900 850 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 2900 750 50  0001 L CNN "Arrow Price/Stock"
+F 10 "810-C3216X7R1H106160" H 2900 650 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X7R1H106K160AE/?qs=P1JMDcb91o5x9yNYwFTXAw%3D%3D" H 2900 550 50  0001 L CNN "Mouser Price/Stock"
+	1    2550 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:C3216X7R1H106K160AE C37
+U 1 1 5FDD6DCD
+P 2800 1400
+F 0 "C37" V 3004 1528 50  0000 L CNN
+F 1 "C3216X7R1H106K160AE" V 3095 1528 50  0001 L CNN
+F 2 "CAPC3216X180N" H 3150 1450 50  0001 L CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 3150 1350 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 50VDC 10uF 10% X7R SOFT TERM" H 3150 1250 50  0001 L CNN "Description"
+F 5 "1.8" H 3150 1150 50  0001 L CNN "Height"
+F 6 "TDK" H 3150 1050 50  0001 L CNN "Manufacturer_Name"
+F 7 "C3216X7R1H106K160AE" H 3150 950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3150 850 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 3150 750 50  0001 L CNN "Arrow Price/Stock"
+F 10 "810-C3216X7R1H106160" H 3150 650 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X7R1H106K160AE/?qs=P1JMDcb91o5x9yNYwFTXAw%3D%3D" H 3150 550 50  0001 L CNN "Mouser Price/Stock"
+	1    2800 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:C3216X7R1H106K160AE C38
+U 1 1 5FDD6DDF
+P 3050 1400
+F 0 "C38" V 3254 1528 50  0000 L CNN
+F 1 "C3216X7R1H106K160AE" V 3345 1528 50  0001 L CNN
+F 2 "CAPC3216X180N" H 3400 1450 50  0001 L CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 3400 1350 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 50VDC 10uF 10% X7R SOFT TERM" H 3400 1250 50  0001 L CNN "Description"
+F 5 "1.8" H 3400 1150 50  0001 L CNN "Height"
+F 6 "TDK" H 3400 1050 50  0001 L CNN "Manufacturer_Name"
+F 7 "C3216X7R1H106K160AE" H 3400 950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3400 850 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 3400 750 50  0001 L CNN "Arrow Price/Stock"
+F 10 "810-C3216X7R1H106160" H 3400 650 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X7R1H106K160AE/?qs=P1JMDcb91o5x9yNYwFTXAw%3D%3D" H 3400 550 50  0001 L CNN "Mouser Price/Stock"
+	1    3050 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:C3216X7R1H106K160AE C39
+U 1 1 5FDD6DF1
+P 3300 1400
+F 0 "C39" V 3504 1528 50  0000 L CNN
+F 1 "C3216X7R1H106K160AE" V 3100 600 50  0000 L CNN
+F 2 "CAPC3216X180N" H 3650 1450 50  0001 L CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 3650 1350 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 50VDC 10uF 10% X7R SOFT TERM" H 3650 1250 50  0001 L CNN "Description"
+F 5 "1.8" H 3650 1150 50  0001 L CNN "Height"
+F 6 "TDK" H 3650 1050 50  0001 L CNN "Manufacturer_Name"
+F 7 "C3216X7R1H106K160AE" H 3650 950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3650 850 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 3650 750 50  0001 L CNN "Arrow Price/Stock"
+F 10 "810-C3216X7R1H106160" H 3650 650 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X7R1H106K160AE/?qs=P1JMDcb91o5x9yNYwFTXAw%3D%3D" H 3650 550 50  0001 L CNN "Mouser Price/Stock"
+	1    3300 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 1300 3300 1400
+Wire Wire Line
+	3050 1400 3050 1300
+Connection ~ 3050 1300
+Wire Wire Line
+	3050 1300 3300 1300
+Wire Wire Line
+	2800 1400 2800 1300
+Connection ~ 2800 1300
+Wire Wire Line
+	2800 1300 3050 1300
+Wire Wire Line
+	2550 1400 2550 1300
+Connection ~ 2550 1300
+Wire Wire Line
+	2550 1300 2800 1300
+Wire Wire Line
+	2000 2000 2300 2000
+Wire Wire Line
+	3300 2000 3300 1900
+Connection ~ 2000 2000
+Wire Wire Line
+	3050 1900 3050 2000
+Connection ~ 3050 2000
+Wire Wire Line
+	3050 2000 3300 2000
+Wire Wire Line
+	2800 1900 2800 2000
+Connection ~ 2800 2000
+Wire Wire Line
+	2800 2000 3050 2000
+Wire Wire Line
+	2550 1900 2550 2000
+Connection ~ 2550 2000
+Wire Wire Line
+	2550 2000 2800 2000
+$Comp
+L EEE-FK1E330P:EEE-FK1E330P C32
+U 1 1 5FDD6E19
+P 1250 1400
+F 0 "C32" V 1454 1530 50  0000 L CNN
+F 1 "EEE-FK1E330P" V 1545 1530 50  0001 L CNN
+F 2 "CAPAE660X610N" H 1600 1450 50  0001 L CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 1600 1350 50  0001 L CNN
+F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 1600 1250 50  0001 L CNN "Description"
+F 5 "6.1" H 1600 1150 50  0001 L CNN "Height"
+F 6 "Panasonic" H 1600 1050 50  0001 L CNN "Manufacturer_Name"
+F 7 "EEE-FK1E330P" H 1600 950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 1600 850 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 1600 750 50  0001 L CNN "Arrow Price/Stock"
+F 10 "667-EEE-FK1E330P" H 1600 650 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 1600 550 50  0001 L CNN "Mouser Price/Stock"
+	1    1250 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L EEE-FK1E330P:EEE-FK1E330P C33
+U 1 1 5FDD6E2B
+P 1500 1400
+F 0 "C33" V 1704 1530 50  0000 L CNN
+F 1 "EEE-FK1E330P" V 1795 1530 50  0001 L CNN
+F 2 "CAPAE660X610N" H 1850 1450 50  0001 L CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 1850 1350 50  0001 L CNN
+F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 1850 1250 50  0001 L CNN "Description"
+F 5 "6.1" H 1850 1150 50  0001 L CNN "Height"
+F 6 "Panasonic" H 1850 1050 50  0001 L CNN "Manufacturer_Name"
+F 7 "EEE-FK1E330P" H 1850 950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 1850 850 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 1850 750 50  0001 L CNN "Arrow Price/Stock"
+F 10 "667-EEE-FK1E330P" H 1850 650 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 1850 550 50  0001 L CNN "Mouser Price/Stock"
+	1    1500 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L EEE-FK1E330P:EEE-FK1E330P C34
+U 1 1 5FDD6E3D
+P 1750 1400
+F 0 "C34" V 1954 1530 50  0000 L CNN
+F 1 "EEE-FK1E330P" V 2045 1530 50  0001 L CNN
+F 2 "CAPAE660X610N" H 2100 1450 50  0001 L CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 2100 1350 50  0001 L CNN
+F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 2100 1250 50  0001 L CNN "Description"
+F 5 "6.1" H 2100 1150 50  0001 L CNN "Height"
+F 6 "Panasonic" H 2100 1050 50  0001 L CNN "Manufacturer_Name"
+F 7 "EEE-FK1E330P" H 2100 950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 2100 850 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 2100 750 50  0001 L CNN "Arrow Price/Stock"
+F 10 "667-EEE-FK1E330P" H 2100 650 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 2100 550 50  0001 L CNN "Mouser Price/Stock"
+	1    1750 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L EEE-FK1E330P:EEE-FK1E330P C35
+U 1 1 5FDD6E4F
+P 2000 1400
+F 0 "C35" V 2204 1530 50  0000 L CNN
+F 1 "EEE-FK1E330P" V 1800 750 50  0000 L CNN
+F 2 "CAPAE660X610N" H 2350 1450 50  0001 L CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 2350 1350 50  0001 L CNN
+F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 2350 1250 50  0001 L CNN "Description"
+F 5 "6.1" H 2350 1150 50  0001 L CNN "Height"
+F 6 "Panasonic" H 2350 1050 50  0001 L CNN "Manufacturer_Name"
+F 7 "EEE-FK1E330P" H 2350 950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 2350 850 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 2350 750 50  0001 L CNN "Arrow Price/Stock"
+F 10 "667-EEE-FK1E330P" H 2350 650 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 2350 550 50  0001 L CNN "Mouser Price/Stock"
+	1    2000 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  1300 1250 1300
+Wire Wire Line
+	1250 1400 1250 1300
+Connection ~ 1250 1300
+Wire Wire Line
+	1250 1300 1500 1300
+Wire Wire Line
+	1500 1400 1500 1300
+Connection ~ 1500 1300
+Wire Wire Line
+	1500 1300 1750 1300
+Wire Wire Line
+	1750 1400 1750 1300
+Connection ~ 1750 1300
+Wire Wire Line
+	1750 1300 2000 1300
+Wire Wire Line
+	2000 1400 2000 1300
+Connection ~ 2000 1300
+Wire Wire Line
+	2000 1300 2550 1300
+Wire Wire Line
+	1500 2000 1750 2000
+Wire Wire Line
+	2300 2150 2300 2000
+Connection ~ 2300 2000
+Wire Wire Line
+	2300 2000 2550 2000
+Connection ~ 3300 1300
+Wire Wire Line
+	4950 1950 4950 2050
+Connection ~ 4950 1950
+Wire Wire Line
+	4950 1850 4950 1950
+Connection ~ 4950 1850
+Wire Wire Line
+	4850 1850 4950 1850
+Wire Wire Line
+	4950 1300 4950 1850
+Connection ~ 4950 1300
+Wire Wire Line
+	4950 1200 4950 1300
+Connection ~ 4950 1200
+Wire Wire Line
+	4950 2050 4850 2050
+Wire Wire Line
+	4950 1100 4950 1200
+Wire Wire Line
+	4850 1100 4950 1100
+Wire Wire Line
+	3300 1300 3600 1300
+Wire Wire Line
+	3750 2050 3750 2150
+Connection ~ 3750 2050
+Wire Wire Line
+	3850 2050 3750 2050
+Wire Wire Line
+	3750 1950 3750 2050
+Connection ~ 3750 1950
+Wire Wire Line
+	3850 1950 3750 1950
+Wire Wire Line
+	3750 1850 3750 1950
+Connection ~ 3750 1850
+Wire Wire Line
+	3850 1850 3750 1850
+Wire Wire Line
+	3750 1400 3750 1850
+Connection ~ 3750 1400
+Wire Wire Line
+	3850 1400 3750 1400
+Wire Wire Line
+	3750 1300 3750 1400
+Connection ~ 3750 1300
+Wire Wire Line
+	3850 1300 3750 1300
+Wire Wire Line
+	3750 1200 3750 1300
+Connection ~ 3750 1200
+Wire Wire Line
+	3850 1200 3750 1200
+Wire Wire Line
+	3750 2150 3850 2150
+Wire Wire Line
+	3750 1100 3750 1200
+Wire Wire Line
+	3850 1100 3750 1100
+$Comp
+L BSC014N04LSI:BSC014N04LSI M11
+U 1 1 5FDAE862
+P 4850 1100
+F 0 "M11" H 5350 1365 50  0000 C CNN
+F 1 "BSC014N04LSI" H 5350 1274 50  0000 C CNN
+F 2 "BSC059N04LS6ATMA1" H 5700 1200 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 5700 1100 50  0001 L CNN
+F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 5700 1000 50  0001 L CNN "Description"
+F 5 "" H 5700 900 50  0001 L CNN "Height"
+F 6 "Infineon" H 5700 800 50  0001 L CNN "Manufacturer_Name"
+F 7 "BSC014N04LSI" H 5700 700 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 5700 600 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 5700 500 50  0001 L CNN "Arrow Price/Stock"
+F 10 "726-BSC014N04LSI" H 5700 400 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 5700 300 50  0001 L CNN "Mouser Price/Stock"
+	1    4850 1100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L BSC014N04LSI:BSC014N04LSI M15
+U 1 1 5FDADB92
+P 4850 1850
+F 0 "M15" H 5350 2115 50  0000 C CNN
+F 1 "BSC014N04LSI" H 5350 2024 50  0000 C CNN
+F 2 "BSC059N04LS6ATMA1" H 5700 1950 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 5700 1850 50  0001 L CNN
+F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 5700 1750 50  0001 L CNN "Description"
+F 5 "" H 5700 1650 50  0001 L CNN "Height"
+F 6 "Infineon" H 5700 1550 50  0001 L CNN "Manufacturer_Name"
+F 7 "BSC014N04LSI" H 5700 1450 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 5700 1350 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 5700 1250 50  0001 L CNN "Arrow Price/Stock"
+F 10 "726-BSC014N04LSI" H 5700 1150 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 5700 1050 50  0001 L CNN "Mouser Price/Stock"
+	1    4850 1850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2200 6450 2200
+Wire Wire Line
+	6450 2200 6450 1750
+Wire Wire Line
+	6200 2100 6250 2100
+Wire Wire Line
+	6250 2100 6250 2000
+Wire Wire Line
+	6250 1900 6200 1900
+Wire Wire Line
+	6200 2000 6250 2000
+Connection ~ 6250 2000
+Wire Wire Line
+	6250 2000 6250 1900
+$Comp
+L power:GND #PWR011
+U 1 1 5FE26D34
+P 6250 1800
+F 0 "#PWR011" H 6250 1550 50  0001 C CNN
+F 1 "GND" H 6255 1627 50  0000 C CNN
+F 2 "" H 6250 1800 50  0001 C CNN
+F 3 "" H 6250 1800 50  0001 C CNN
+	1    6250 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 1800 6250 1900
+Connection ~ 6250 1900
+Wire Wire Line
+	4850 1400 5000 1400
+Wire Wire Line
+	5000 1400 5000 2150
+Wire Wire Line
+	5000 2150 4850 2150
+Wire Wire Line
+	5000 2150 5000 2450
+Connection ~ 5000 2150
+Wire Wire Line
+	4950 1100 5100 1100
+Wire Wire Line
+	5100 2200 5200 2200
+Connection ~ 4950 1100
+Wire Wire Line
+	5200 1900 5100 1900
+Connection ~ 5100 1900
+Wire Wire Line
+	5200 2000 5100 2000
+Connection ~ 5100 2000
+Wire Wire Line
+	5100 2000 5100 2100
+Wire Wire Line
+	5200 2100 5100 2100
+Connection ~ 5100 2100
+Wire Wire Line
+	5100 2100 5100 2200
+$Comp
+L power:GND #PWR012
+U 1 1 5FEE8184
+P 6450 3050
+F 0 "#PWR012" H 6450 2800 50  0001 C CNN
+F 1 "GND" H 6455 2877 50  0000 C CNN
+F 2 "" H 6450 3050 50  0001 C CNN
+F 3 "" H 6450 3050 50  0001 C CNN
+	1    6450 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2750 3600 1300
+Connection ~ 3600 1300
+Wire Wire Line
+	3600 1300 3750 1300
+$Comp
+L power:GND #PWR013
+U 1 1 5FEFC9A1
+P 5950 3050
+F 0 "#PWR013" H 5950 2800 50  0001 C CNN
+F 1 "GND" H 5955 2877 50  0000 C CNN
+F 2 "" H 5950 3050 50  0001 C CNN
+F 3 "" H 5950 3050 50  0001 C CNN
+	1    5950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C41
+U 1 1 5FF03409
+P 6150 3500
+F 0 "C41" H 6242 3546 50  0000 L CNN
+F 1 "0.47uF" H 6242 3455 50  0000 L CNN
+F 2 "" H 6150 3500 50  0001 C CNN
+F 3 "~" H 6150 3500 50  0001 C CNN
+	1    6150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3150 6150 3400
+$Comp
+L power:GND #PWR014
+U 1 1 5FF0A74C
+P 6150 3750
+F 0 "#PWR014" H 6150 3500 50  0001 C CNN
+F 1 "GND" H 6155 3577 50  0000 C CNN
+F 2 "" H 6150 3750 50  0001 C CNN
+F 3 "" H 6150 3750 50  0001 C CNN
+	1    6150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3600 6150 3750
+Wire Wire Line
+	11250 4450 11250 4000
+Wire Wire Line
+	9650 4650 9850 4650
+$Comp
+L LTC6908HS6-2TRPBF:LTC6908HS6-2TRPBF U3
+U 1 1 5FDB83AE
+P 10550 4550
+F 0 "U3" H 10550 5020 50  0000 C CNN
+F 1 "LTC6908HS6-2TRPBF" H 10550 4929 50  0000 C CNN
+F 2 "SOT95P280X100-6N" H 10550 4550 50  0001 L BNN
+F 3 "" H 10550 4550 50  0001 L BNN
+F 4 "LTC6908HS6-2#TRPBF" H 10550 4550 50  0001 L BNN "MPN"
+F 5 "-" H 10550 4550 50  0001 L BNN "OC_FARNELL"
+F 6 "51P4610" H 10550 4550 50  0001 L BNN "OC_NEWARK"
+F 7 "TSOP-23-6" H 10550 4550 50  0001 L BNN "PACKAGE"
+F 8 "Linear Technology" H 10550 4550 50  0001 L BNN "SUPPLIER"
+	1    10550 4550
+	1    0    0    -1  
+$EndComp
+Text Label 11450 4450 0    50   ~ 0
+SYNC1
+Wire Wire Line
+	11250 4450 11450 4450
+Connection ~ 11250 4450
+Text Label 11450 4550 0    50   ~ 0
+SYNC2
+Wire Wire Line
+	11250 4550 11450 4550
+Text Notes 11750 4650 0    50   ~ 0
+150kHz CLOCK SOURCE\nWITH COMPLEMENTARY OUTPUTS
+$Comp
+L Device:R_Small_US R17
+U 1 1 5FF9BE90
+P 9400 4750
+F 0 "R17" V 9605 4750 50  0000 C CNN
+F 1 "665K" V 9514 4750 50  0000 C CNN
+F 2 "" H 9400 4750 50  0001 C CNN
+F 3 "~" H 9400 4750 50  0001 C CNN
+	1    9400 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9850 4450 9550 4450
+Wire Wire Line
+	9250 4450 9250 4750
+Wire Wire Line
+	9250 4750 9300 4750
+Wire Wire Line
+	9500 4750 9850 4750
+Wire Wire Line
+	6450 2950 6450 3050
+$Comp
+L Device:C_Small C40
+U 1 1 5FEE8A64
+P 6450 2850
+F 0 "C40" H 6542 2896 50  0000 L CNN
+F 1 "1uF" H 6542 2805 50  0000 L CNN
+F 2 "" H 6450 2850 50  0001 C CNN
+F 3 "~" H 6450 2850 50  0001 C CNN
+	1    6450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C47
+U 1 1 5FFE6217
+P 9550 5150
+F 0 "C47" H 9642 5196 50  0000 L CNN
+F 1 "0.1uF" H 9642 5105 50  0000 L CNN
+F 2 "" H 9550 5150 50  0001 C CNN
+F 3 "~" H 9550 5150 50  0001 C CNN
+	1    9550 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 5050 9550 4450
+Connection ~ 9550 4450
+Wire Wire Line
+	9550 4450 9250 4450
+Wire Wire Line
+	9550 5250 9850 5250
+Wire Wire Line
+	9850 5250 9850 4950
+Wire Wire Line
+	11000 1400 11150 1400
+Wire Wire Line
+	11150 1400 11150 1300
+Wire Wire Line
+	11150 1100 11000 1100
+Wire Wire Line
+	11000 1200 11150 1200
+Connection ~ 11150 1200
+Wire Wire Line
+	11150 1200 11150 1100
+Wire Wire Line
+	11000 1300 11150 1300
+Connection ~ 11150 1300
+Wire Wire Line
+	11150 1300 11150 1200
+$Comp
+L SamacSys_Parts:C3216X5R1C476M160AB C48
+U 1 1 601B7A02
+P 11650 1100
+F 0 "C48" V 11854 1228 50  0000 L CNN
+F 1 "C3216X5R1C476M160AB" V 11550 1050 50  0000 L CNN
+F 2 "CAPC3216X180N" H 12000 1150 50  0000 L CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 12000 1050 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT CAP CER 47UF 16V X5R 20% 1206" H 12000 950 50  0001 L CNN "Description"
+F 5 "1.8" H 12000 850 50  0001 L CNN "Height"
+F 6 "TDK" H 12000 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "C3216X5R1C476M160AB" H 12000 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 12000 550 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 12000 450 50  0001 L CNN "Arrow Price/Stock"
+F 10 "810-C3216X5R1C476M" H 12000 350 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X5R1C476M160AB/?qs=NRhsANhppD%252Bc%252BjuSy9SeLw%3D%3D" H 12000 250 50  0001 L CNN "Mouser Price/Stock"
+	1    11650 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:C3216X5R1C476M160AB C49
+U 1 1 601B86D6
+P 11900 1100
+F 0 "C49" V 12150 1228 50  0000 L CNN
+F 1 "C3216X5R1C476M160AB" V 12195 1228 50  0001 L CNN
+F 2 "CAPC3216X180N" H 12250 1150 50  0001 L CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 12250 1050 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT CAP CER 47UF 16V X5R 20% 1206" H 12250 950 50  0001 L CNN "Description"
+F 5 "1.8" H 12250 850 50  0001 L CNN "Height"
+F 6 "TDK" H 12250 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "C3216X5R1C476M160AB" H 12250 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 12250 550 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 12250 450 50  0001 L CNN "Arrow Price/Stock"
+F 10 "810-C3216X5R1C476M" H 12250 350 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X5R1C476M160AB/?qs=NRhsANhppD%252Bc%252BjuSy9SeLw%3D%3D" H 12250 250 50  0001 L CNN "Mouser Price/Stock"
+	1    11900 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:C3216X5R1C476M160AB C50
+U 1 1 601B9955
+P 12150 1100
+F 0 "C50" V 12400 1228 50  0000 L CNN
+F 1 "C3216X5R1C476M160AB" V 12445 1228 50  0001 L CNN
+F 2 "CAPC3216X180N" H 12500 1150 50  0001 L CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 12500 1050 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT CAP CER 47UF 16V X5R 20% 1206" H 12500 950 50  0001 L CNN "Description"
+F 5 "1.8" H 12500 850 50  0001 L CNN "Height"
+F 6 "TDK" H 12500 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "C3216X5R1C476M160AB" H 12500 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 12500 550 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 12500 450 50  0001 L CNN "Arrow Price/Stock"
+F 10 "810-C3216X5R1C476M" H 12500 350 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X5R1C476M160AB/?qs=NRhsANhppD%252Bc%252BjuSy9SeLw%3D%3D" H 12500 250 50  0001 L CNN "Mouser Price/Stock"
+	1    12150 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:C3216X5R1C476M160AB C51
+U 1 1 601BA37D
+P 12400 1100
+F 0 "C51" V 12650 1228 50  0000 L CNN
+F 1 "C3216X5R1C476M160AB" V 12695 1228 50  0001 L CNN
+F 2 "CAPC3216X180N" H 12750 1150 50  0001 L CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 12750 1050 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT CAP CER 47UF 16V X5R 20% 1206" H 12750 950 50  0001 L CNN "Description"
+F 5 "1.8" H 12750 850 50  0001 L CNN "Height"
+F 6 "TDK" H 12750 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "C3216X5R1C476M160AB" H 12750 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 12750 550 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 12750 450 50  0001 L CNN "Arrow Price/Stock"
+F 10 "810-C3216X5R1C476M" H 12750 350 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X5R1C476M160AB/?qs=NRhsANhppD%252Bc%252BjuSy9SeLw%3D%3D" H 12750 250 50  0001 L CNN "Mouser Price/Stock"
+	1    12400 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11150 1100 11350 1100
+Connection ~ 11150 1100
+Wire Wire Line
+	11900 1100 12150 1100
+Wire Wire Line
+	11650 1100 11900 1100
+Connection ~ 11650 1100
+Connection ~ 11900 1100
+Wire Wire Line
+	12150 1100 12400 1100
+Connection ~ 12150 1100
+Wire Wire Line
+	11650 1600 11900 1600
+Wire Wire Line
+	11900 1600 12000 1600
+Connection ~ 11900 1600
+Wire Wire Line
+	12150 1600 12400 1600
+Connection ~ 12150 1600
+$Comp
+L power:GND #PWR022
+U 1 1 60202BFC
+P 12000 1850
+F 0 "#PWR022" H 12000 1600 50  0001 C CNN
+F 1 "GND" H 12005 1677 50  0000 C CNN
+F 2 "" H 12000 1850 50  0001 C CNN
+F 3 "" H 12000 1850 50  0001 C CNN
+	1    12000 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 1850 12000 1600
+Connection ~ 12000 1600
+Wire Wire Line
+	12000 1600 12150 1600
+Wire Wire Line
+	11350 1100 11350 1700
+Wire Wire Line
+	11350 1700 11050 1700
+Connection ~ 11350 1100
+Wire Wire Line
+	11350 1100 11650 1100
+Text Label 11050 1700 2    50   ~ 0
+VOUT
+$Comp
+L power:GND #PWR021
+U 1 1 60230B3D
+P 11350 1850
+F 0 "#PWR021" H 11350 1600 50  0001 C CNN
+F 1 "GND" H 11355 1677 50  0000 C CNN
+F 2 "" H 11350 1850 50  0001 C CNN
+F 3 "" H 11350 1850 50  0001 C CNN
+	1    11350 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11350 1850 11350 1700
+Connection ~ 11350 1700
+$Comp
+L SamacSys_Parts:16SVF560M C52
+U 1 1 60262F49
+P 12750 1100
+F 0 "C52" V 12954 1230 50  0000 L CNN
+F 1 "16SVF560M" V 12650 1000 50  0000 L CNN
+F 2 "CAPAE830X1200N" H 13100 1150 50  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Capacitors%20PDFs/SVF_Series_DS.pdf" H 13100 1050 50  0001 L CNN
+F 4 "Aluminum Organic Polymer Capacitors 560uf 16volts 4.95A OS-CON Polymer" H 13100 950 50  0001 L CNN "Description"
+F 5 "12" H 13100 850 50  0001 L CNN "Height"
+F 6 "Panasonic" H 13100 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "16SVF560M" H 13100 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "16SVF560M" H 13100 550 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/16svf560m/panasonic" H 13100 450 50  0001 L CNN "Arrow Price/Stock"
+F 10 "667-16SVF560M" H 13100 350 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Panasonic/16SVF560M/?qs=KTDjhDDUMAmQ85MU40IRZQ%3D%3D" H 13100 250 50  0001 L CNN "Mouser Price/Stock"
+	1    12750 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:16SVF560M C53
+U 1 1 60263D0F
+P 13000 1100
+F 0 "C53" V 13250 1230 50  0000 L CNN
+F 1 "16SVF560M" V 13295 1230 50  0001 L CNN
+F 2 "CAPAE830X1200N" H 13350 1150 50  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Capacitors%20PDFs/SVF_Series_DS.pdf" H 13350 1050 50  0001 L CNN
+F 4 "Aluminum Organic Polymer Capacitors 560uf 16volts 4.95A OS-CON Polymer" H 13350 950 50  0001 L CNN "Description"
+F 5 "12" H 13350 850 50  0001 L CNN "Height"
+F 6 "Panasonic" H 13350 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "16SVF560M" H 13350 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "16SVF560M" H 13350 550 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/16svf560m/panasonic" H 13350 450 50  0001 L CNN "Arrow Price/Stock"
+F 10 "667-16SVF560M" H 13350 350 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Panasonic/16SVF560M/?qs=KTDjhDDUMAmQ85MU40IRZQ%3D%3D" H 13350 250 50  0001 L CNN "Mouser Price/Stock"
+	1    13000 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12400 1100 12750 1100
+Wire Wire Line
+	12750 1100 13000 1100
+Connection ~ 12750 1100
+Wire Wire Line
+	12750 1600 12850 1600
+$Comp
+L power:GND #PWR023
+U 1 1 602BA603
+P 12850 1700
+F 0 "#PWR023" H 12850 1450 50  0001 C CNN
+F 1 "GND" H 12855 1527 50  0000 C CNN
+F 2 "" H 12850 1700 50  0001 C CNN
+F 3 "" H 12850 1700 50  0001 C CNN
+	1    12850 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 1700 12850 1600
+Connection ~ 12850 1600
+Wire Wire Line
+	12850 1600 13000 1600
+Connection ~ 12400 1100
+$Comp
+L SamacSys_Parts:KRL6432E-C-R006-F-T1 R18
+U 1 1 60336A2D
+P 13350 850
+F 0 "R18" H 13700 1075 50  0000 C CNN
+F 1 "KRL6432D-M-R006-G-T1" H 13700 984 50  0000 C CNN
+F 2 "RESC3163X50N" H 13900 900 50  0001 L CNN
+F 3 "http://www.mouser.com/datasheet/2/392/n_catalog_partition19_en-1114600.pdf" H 13900 800 50  0001 L CNN
+F 4 "Current Sense Resistors - SMD 0.006 ohm 1% 3.0W" H 13900 700 50  0001 L CNN "Description"
+F 5 "0.5" H 13900 600 50  0001 L CNN "Height"
+F 6 "Susumu" H 13900 500 50  0001 L CNN "Manufacturer_Name"
+F 7 "KRL6432E-C-R006-F-T1" H 13900 400 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 13900 300 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 13900 200 50  0001 L CNN "Arrow Price/Stock"
+F 10 "754-KRL6432ECR006FT1" H 13900 100 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Susumu/KRL6432E-C-R006-F-T1/?qs=lc2O%252BfHJPVZeFQbLV4n%2Fcw%3D%3D" H 13900 0   50  0001 L CNN "Mouser Price/Stock"
+	1    13350 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:KRL6432E-C-R006-F-T1 R19
+U 1 1 6034504A
+P 13350 1100
+F 0 "R19" H 13700 1325 50  0000 C CNN
+F 1 "KRL6432D-M-R006-G-T1" H 13700 1234 50  0000 C CNN
+F 2 "RESC3163X50N" H 13900 1150 50  0001 L CNN
+F 3 "http://www.mouser.com/datasheet/2/392/n_catalog_partition19_en-1114600.pdf" H 13900 1050 50  0001 L CNN
+F 4 "Current Sense Resistors - SMD 0.006 ohm 1% 3.0W" H 13900 950 50  0001 L CNN "Description"
+F 5 "0.5" H 13900 850 50  0001 L CNN "Height"
+F 6 "Susumu" H 13900 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "KRL6432E-C-R006-F-T1" H 13900 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 13900 550 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 13900 450 50  0001 L CNN "Arrow Price/Stock"
+F 10 "754-KRL6432ECR006FT1" H 13900 350 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Susumu/KRL6432E-C-R006-F-T1/?qs=lc2O%252BfHJPVZeFQbLV4n%2Fcw%3D%3D" H 13900 250 50  0001 L CNN "Mouser Price/Stock"
+	1    13350 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 1100 13350 1100
+Connection ~ 13000 1100
+Wire Wire Line
+	13350 850  13350 1100
+Connection ~ 13350 1100
+Wire Wire Line
+	14050 850  14050 1100
+$Comp
+L Device:R_Small_US R20
+U 1 1 60378186
+P 13350 1400
+F 0 "R20" H 13418 1446 50  0000 L CNN
+F 1 "50" H 13418 1355 50  0000 L CNN
+F 2 "" H 13350 1400 50  0001 C CNN
+F 3 "~" H 13350 1400 50  0001 C CNN
+	1    13350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R21
+U 1 1 60378B65
+P 14050 1400
+F 0 "R21" H 14118 1446 50  0000 L CNN
+F 1 "50" H 14118 1355 50  0000 L CNN
+F 2 "" H 14050 1400 50  0001 C CNN
+F 3 "~" H 14050 1400 50  0001 C CNN
+	1    14050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C54
+U 1 1 60379457
+P 13700 1700
+F 0 "C54" V 13471 1700 50  0000 C CNN
+F 1 "1uF" V 13562 1700 50  0000 C CNN
+F 2 "" H 13700 1700 50  0001 C CNN
+F 3 "~" H 13700 1700 50  0001 C CNN
+	1    13700 1700
+	0    1    1    0   
+$EndComp
+Text Label 13350 1950 3    50   ~ 0
+ISP
+Text Label 14050 1950 3    50   ~ 0
+ISN
+Wire Wire Line
+	13350 1100 13350 1300
+Wire Wire Line
+	13350 1500 13350 1700
+Wire Wire Line
+	14050 1100 14050 1300
+Connection ~ 14050 1100
+Wire Wire Line
+	14050 1500 14050 1700
+Wire Wire Line
+	13800 1700 14050 1700
+Connection ~ 14050 1700
+Wire Wire Line
+	14050 1700 14050 1950
+Wire Wire Line
+	13600 1700 13350 1700
+Connection ~ 13350 1700
+Wire Wire Line
+	13350 1700 13350 1950
+Connection ~ 6450 2750
+Connection ~ 9250 4450
+Connection ~ 5100 1100
+Wire Wire Line
+	6450 2750 3600 2750
+Wire Wire Line
+	5100 1900 5100 2000
+Wire Wire Line
+	5100 1100 5100 1900
+Wire Wire Line
+	4850 1950 4950 1950
+Wire Wire Line
+	4850 1300 4950 1300
+Wire Wire Line
+	4850 1200 4950 1200
+Wire Wire Line
+	8150 3050 8300 3050
+Text Label 8300 3050 0    50   ~ 0
+FB
+Wire Wire Line
+	7150 3950 7150 3850
+Text Label 7150 3950 3    50   ~ 0
+ISMON
+Wire Wire Line
+	6600 1850 7050 1850
+$Comp
+L power:GND #PWR020
+U 1 1 6023C8EB
+P 6600 1850
+F 0 "#PWR020" H 6600 1600 50  0001 C CNN
+F 1 "GND" H 6605 1677 50  0000 C CNN
+F 2 "" H 6600 1850 50  0001 C CNN
+F 3 "" H 6600 1850 50  0001 C CNN
+	1    6600 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2550 8300 2550
+Text Label 8300 2550 0    50   ~ 0
+VOUT
+Wire Wire Line
+	9950 1200 9950 1300
+Connection ~ 9950 1200
+Wire Wire Line
+	10000 1200 9950 1200
+Wire Wire Line
+	9950 1100 10000 1100
+Connection ~ 9950 1100
+Wire Wire Line
+	9950 1300 10000 1300
+Wire Wire Line
+	9950 1100 9950 1200
+Connection ~ 9600 1100
+Wire Wire Line
+	9600 1100 9950 1100
+Wire Wire Line
+	7350 3950 7350 3850
+Wire Wire Line
+	7250 3950 7250 3850
+Text Label 7350 3950 3    50   ~ 0
+ISN
+Text Label 7250 3950 3    50   ~ 0
+ISP
+Wire Wire Line
+	6400 2650 6550 2650
+Wire Wire Line
+	6400 2550 6550 2550
+Wire Wire Line
+	9900 1400 10000 1400
+Wire Wire Line
+	9900 1900 9900 1400
+Wire Wire Line
+	8150 1900 9900 1900
+Wire Wire Line
+	8150 2450 8150 1900
+Connection ~ 9300 1100
+Connection ~ 9600 2200
+Wire Wire Line
+	9600 1100 9300 1100
+Wire Wire Line
+	9600 2200 9600 1100
+Wire Wire Line
+	9600 3150 9600 3050
+Connection ~ 9600 3150
+Wire Wire Line
+	9700 3150 9600 3150
+Wire Wire Line
+	9600 3050 9600 2950
+Connection ~ 9600 3050
+Wire Wire Line
+	9700 3050 9600 3050
+Wire Wire Line
+	9600 2950 9600 2500
+Connection ~ 9600 2950
+Wire Wire Line
+	9700 2950 9600 2950
+Wire Wire Line
+	9600 2500 9600 2400
+Connection ~ 9600 2500
+Wire Wire Line
+	9700 2500 9600 2500
+Wire Wire Line
+	9600 2400 9600 2300
+Connection ~ 9600 2400
+Wire Wire Line
+	9700 2400 9600 2400
+Wire Wire Line
+	9600 2300 9600 2200
+Connection ~ 9600 2300
+Wire Wire Line
+	9700 2300 9600 2300
+Wire Wire Line
+	9600 2200 9700 2200
+Wire Wire Line
+	9600 3250 9600 3150
+Wire Wire Line
+	9700 3250 9600 3250
+Connection ~ 11800 3150
+Wire Wire Line
+	11800 3150 11800 3300
+$Comp
+L power:GND #PWR019
+U 1 1 600D5DC5
+P 11800 3300
+F 0 "#PWR019" H 11800 3050 50  0001 C CNN
+F 1 "GND" H 11805 3127 50  0000 C CNN
+F 2 "" H 11800 3300 50  0001 C CNN
+F 3 "" H 11800 3300 50  0001 C CNN
+	1    11800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11800 2300 11800 2400
+Connection ~ 11800 2300
+Wire Wire Line
+	10700 2300 11800 2300
+Wire Wire Line
+	11800 2400 11800 2500
+Connection ~ 11800 2400
+Wire Wire Line
+	10700 2400 11800 2400
+Wire Wire Line
+	11800 2500 11800 2950
+Connection ~ 11800 2500
+Wire Wire Line
+	10700 2500 11800 2500
+Wire Wire Line
+	11800 2950 11800 3050
+Connection ~ 11800 2950
+Wire Wire Line
+	10700 2950 11800 2950
+Wire Wire Line
+	11800 3050 11800 3150
+Connection ~ 11800 3050
+Wire Wire Line
+	10700 3050 11800 3050
+Wire Wire Line
+	11800 3150 10700 3150
+Wire Wire Line
+	11800 2200 11800 2300
+Wire Wire Line
+	10700 2200 11800 2200
+Wire Wire Line
+	11500 3250 10700 3250
+Wire Wire Line
+	11500 3450 11500 3250
+Wire Wire Line
+	9200 3450 11500 3450
+Wire Wire Line
+	9200 1800 9200 3450
+Wire Wire Line
+	7450 1800 9200 1800
+Wire Wire Line
+	7450 1850 7450 1800
+$Comp
+L BSC014N04LSI:BSC014N04LSI M13
+U 1 1 5FDD8A9F
+P 10700 2200
+F 0 "M13" H 11200 2465 50  0000 C CNN
+F 1 "BSC015NE2LS5I" H 11200 2374 50  0000 C CNN
+F 2 "BSC059N04LS6ATMA1" H 11550 2300 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 11550 2200 50  0001 L CNN
+F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 11550 2100 50  0001 L CNN "Description"
+F 5 "" H 11550 2000 50  0001 L CNN "Height"
+F 6 "Infineon" H 11550 1900 50  0001 L CNN "Manufacturer_Name"
+F 7 "BSC014N04LSI" H 11550 1800 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 11550 1700 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 11550 1600 50  0001 L CNN "Arrow Price/Stock"
+F 10 "726-BSC014N04LSI" H 11550 1500 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 11550 1400 50  0001 L CNN "Mouser Price/Stock"
+	1    10700 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L BSC014N04LSI:BSC014N04LSI M17
+U 1 1 5FDD8C6D
+P 10700 2950
+F 0 "M17" H 11200 3215 50  0000 C CNN
+F 1 "BSC015NE2LS5I" H 11200 3124 50  0000 C CNN
+F 2 "BSC059N04LS6ATMA1" H 11550 3050 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 11550 2950 50  0001 L CNN
+F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 11550 2850 50  0001 L CNN "Description"
+F 5 "" H 11550 2750 50  0001 L CNN "Height"
+F 6 "Infineon" H 11550 2650 50  0001 L CNN "Manufacturer_Name"
+F 7 "BSC014N04LSI" H 11550 2550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 11550 2450 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 11550 2350 50  0001 L CNN "Arrow Price/Stock"
+F 10 "726-BSC014N04LSI" H 11550 2250 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 11550 2150 50  0001 L CNN "Mouser Price/Stock"
+	1    10700 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2850 9100 2850
+Wire Wire Line
+	8150 2950 8800 2950
+Wire Wire Line
+	7550 5050 7550 5200
+Connection ~ 7550 5050
+Wire Wire Line
+	7550 5000 7550 5050
+Wire Wire Line
+	8600 5050 7550 5050
+Wire Wire Line
+	8600 4450 8600 5050
+Wire Wire Line
+	7550 3850 7550 4800
+Connection ~ 7550 3850
+Wire Wire Line
+	7550 3800 7550 3850
+Wire Wire Line
+	7550 5400 7550 5500
+$Comp
+L power:GND #PWR015
+U 1 1 5FFC675A
+P 7550 5500
+F 0 "#PWR015" H 7550 5250 50  0001 C CNN
+F 1 "GND" H 7555 5327 50  0000 C CNN
+F 2 "" H 7550 5500 50  0001 C CNN
+F 3 "" H 7550 5500 50  0001 C CNN
+	1    7550 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R12
+U 1 1 5FFC5EF6
+P 7550 4900
+F 0 "R12" H 7618 4946 50  0000 L CNN
+F 1 "100K" H 7618 4855 50  0000 L CNN
+F 2 "" H 7550 4900 50  0001 C CNN
+F 3 "~" H 7550 4900 50  0001 C CNN
+	1    7550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C43
+U 1 1 5FFC562E
+P 7550 5300
+F 0 "C43" H 7642 5346 50  0000 L CNN
+F 1 "4.7uF" H 7642 5255 50  0000 L CNN
+F 2 "" H 7550 5300 50  0001 C CNN
+F 3 "~" H 7550 5300 50  0001 C CNN
+	1    7550 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2850 6550 2850
+Text Label 6300 2850 0    50   ~ 0
+V+SET
+Wire Wire Line
+	6550 2750 6450 2750
+Wire Wire Line
+	8600 4450 9250 4450
+Wire Wire Line
+	8150 2750 8300 2750
+Text Label 8300 2750 0    50   ~ 0
+SYNC2
+Wire Wire Line
+	9100 3250 9100 3700
+Wire Wire Line
+	9100 2850 9100 3050
+$Comp
+L power:GND #PWR018
+U 1 1 5FF47B6E
+P 9100 3700
+F 0 "#PWR018" H 9100 3450 50  0001 C CNN
+F 1 "GND" H 9105 3527 50  0000 C CNN
+F 2 "" H 9100 3700 50  0001 C CNN
+F 3 "" H 9100 3700 50  0001 C CNN
+	1    9100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R16
+U 1 1 5FF473ED
+P 9100 3150
+F 0 "R16" V 8895 3150 50  0000 C CNN
+F 1 "309K, 150kHz" V 8986 3150 50  0000 C CNN
+F 2 "" H 9100 3150 50  0001 C CNN
+F 3 "~" H 9100 3150 50  0001 C CNN
+	1    9100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3600 8800 3700
+Wire Wire Line
+	8800 3150 8800 3400
+$Comp
+L power:GND #PWR017
+U 1 1 5FF39F78
+P 8800 3700
+F 0 "#PWR017" H 8800 3450 50  0001 C CNN
+F 1 "GND" H 8805 3527 50  0000 C CNN
+F 2 "" H 8800 3700 50  0001 C CNN
+F 3 "" H 8800 3700 50  0001 C CNN
+	1    8800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C45
+U 1 1 5FF3939E
+P 8800 3500
+F 0 "C45" H 8892 3546 50  0000 L CNN
+F 1 "3.3nF" H 8892 3455 50  0000 L CNN
+F 2 "" H 8800 3500 50  0001 C CNN
+F 3 "~" H 8800 3500 50  0001 C CNN
+	1    8800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R15
+U 1 1 5FF38613
+P 8800 3050
+F 0 "R15" H 8868 3096 50  0000 L CNN
+F 1 "3K" H 8868 3005 50  0000 L CNN
+F 2 "" H 8800 3050 50  0001 C CNN
+F 3 "~" H 8800 3050 50  0001 C CNN
+	1    8800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3450 8500 3550
+Wire Wire Line
+	8500 3150 8500 3250
+$Comp
+L Device:C_Small C44
+U 1 1 5FF2F4B3
+P 8500 3350
+F 0 "C44" H 8592 3396 50  0000 L CNN
+F 1 "0.1uF" H 8592 3305 50  0000 L CNN
+F 2 "" H 8500 3350 50  0001 C CNN
+F 3 "~" H 8500 3350 50  0001 C CNN
+	1    8500 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3150 8500 3150
+Connection ~ 8300 3150
+Wire Wire Line
+	8150 3150 8300 3150
+$Comp
+L power:GND #PWR016
+U 1 1 5FF2A6B2
+P 8500 3550
+F 0 "#PWR016" H 8500 3300 50  0001 C CNN
+F 1 "GND" H 8505 3377 50  0000 C CNN
+F 2 "" H 8500 3550 50  0001 C CNN
+F 3 "" H 8500 3550 50  0001 C CNN
+	1    8500 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7050 3850
+Wire Wire Line
+	8300 4600 8300 3150
+Wire Wire Line
+	7350 4600 8300 4600
+Wire Wire Line
+	7150 4600 7050 4600
+$Comp
+L Device:R_Small_US R11
+U 1 1 5FF11D79
+P 7250 4600
+F 0 "R11" V 7045 4600 50  0000 C CNN
+F 1 "100K" V 7136 4600 50  0000 C CNN
+F 2 "" H 7250 4600 50  0001 C CNN
+F 3 "~" H 7250 4600 50  0001 C CNN
+	1    7250 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 4600 7050 3850
+Wire Wire Line
+	6550 3850 7050 3850
+Connection ~ 6550 3150
+Wire Wire Line
+	6550 3150 6150 3150
+Wire Wire Line
+	6550 3150 6550 3850
+NoConn ~ 7450 3850
+Wire Wire Line
+	6550 3050 6450 3050
+NoConn ~ 8150 2650
+Wire Wire Line
+	7550 1650 7550 1850
+Wire Wire Line
+	9300 1650 7550 1650
+Wire Wire Line
+	9300 1500 9300 1650
+Connection ~ 9050 1100
+Wire Wire Line
+	9300 1100 9300 1300
+Wire Wire Line
+	9050 1100 9300 1100
+Wire Wire Line
+	9050 1750 9050 1100
+$Comp
+L Device:C_Small C46
+U 1 1 5FEDBF63
+P 9300 1400
+F 0 "C46" H 9392 1446 50  0000 L CNN
+F 1 "1uF" H 9392 1355 50  0000 L CNN
+F 2 "" H 9300 1400 50  0001 C CNN
+F 3 "~" H 9300 1400 50  0001 C CNN
+	1    9300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LT8390AHUFD#PBF:LT8390AHUFD#PBF U2
 U 1 1 5FDA5F11
 P 6550 2450
-F 0 "IC?" H 7400 1750 50  0000 C CNN
+F 0 "U2" H 7400 1750 50  0000 C CNN
 F 1 "LT8390AHUFD#PBF" H 7400 1650 50  0000 C CNN
 F 2 "QFN50P400X500X80-29N-D" H 8000 2850 50  0001 L CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/8390afa.pdf" H 8000 2750 50  0001 L CNN
@@ -32,803 +1358,251 @@ F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=584-LT8390AHUFDPBF" H 80
 	1    6550 2450
 	1    0    0    -1  
 $EndComp
+Text Label 6400 2550 2    50   ~ 0
+LSP
+Text Label 6400 2650 2    50   ~ 0
+LSN
+Wire Wire Line
+	7650 1750 9050 1750
+Wire Wire Line
+	7150 1600 7150 1850
+Wire Wire Line
+	7500 1600 7150 1600
+Wire Wire Line
+	7250 1450 7250 1850
+Wire Wire Line
+	7650 1750 7650 1850
+Wire Wire Line
+	8350 1100 8750 1100
+Wire Wire Line
+	7500 1100 7500 1600
+Wire Wire Line
+	7350 1850 7350 1750
 $Comp
-L LT8390AHUFD#PBF:LT8390AHUFD#PBF IC?
-U 1 1 5FDA73EC
-P 10100 7200
-F 0 "IC?" H 10900 5711 50  0000 C CNN
-F 1 "LT8390AHUFD#PBF" H 10900 5620 50  0000 C CNN
-F 2 "QFN50P400X500X80-29N-D" H 11550 7600 50  0001 L CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/8390afa.pdf" H 11550 7500 50  0001 L CNN
-F 4 "Switching Voltage Regulators 60V Synchronous 4-Switch Buck-Boost Controller with Spread Spectrum" H 11550 7400 50  0001 L CNN "Description"
-F 5 "0.8" H 11550 7300 50  0001 L CNN "Height"
-F 6 "Analog Devices" H 11550 7200 50  0001 L CNN "Manufacturer_Name"
-F 7 "LT8390AHUFD#PBF" H 11550 7100 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "LT8390AHUFD#PBF" H 11550 7000 50  0001 L CNN "Arrow Part Number"
-F 9 "https://www.arrow.com/en/products/lt8390ahufdpbf/analog-devices" H 11550 6900 50  0001 L CNN "Arrow Price/Stock"
-F 10 "584-LT8390AHUFDPBF" H 11550 6800 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=584-LT8390AHUFDPBF" H 11550 6700 50  0001 L CNN "Mouser Price/Stock"
-	1    10100 7200
+L Device:L L3
+U 1 1 5FE829BB
+P 8900 1100
+F 0 "L3" V 9090 1100 50  0000 C CNN
+F 1 "B82559B2152A027" V 8999 1100 50  0000 C CNN
+F 2 "" H 8900 1100 50  0001 C CNN
+F 3 "~" H 8900 1100 50  0001 C CNN
+	1    8900 1100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8350 1100
+Wire Wire Line
+	8350 1250 8350 1100
+Wire Wire Line
+	7650 1250 7650 1100
+Wire Wire Line
+	7650 1100 7800 1100
+Text Label 8350 1250 2    50   ~ 0
+LSN
+Text Label 7650 1250 0    50   ~ 0
+LSP
+Wire Wire Line
+	8350 1100 8350 850 
+Connection ~ 7650 1100
+Wire Wire Line
+	7650 850  7650 1100
+Wire Wire Line
+	7500 1100 7650 1100
+$Comp
+L SamacSys_Parts:KRL6432E-M-R002-G-T1 R14
+U 1 1 5FE5DEED
+P 7650 1100
+F 0 "R14" H 8000 1325 50  0000 C CNN
+F 1 "KRL6432D-M-R002-G-T1" H 8000 1234 50  0000 C CNN
+F 2 "RESC3163X70N" H 8200 1150 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/KRL6432E-M-R002-G-T1.pdf" H 8200 1050 50  0001 L CNN
+F 4 "Current Sense Resistors - SMD 3W 0.002ohm 1% 100ppm" H 8200 950 50  0001 L CNN "Description"
+F 5 "0.7" H 8200 850 50  0001 L CNN "Height"
+F 6 "Susumu" H 8200 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "KRL6432E-M-R002-G-T1" H 8200 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 8200 550 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 8200 450 50  0001 L CNN "Arrow Price/Stock"
+F 10 "754-KRL6432EMR002GT1" H 8200 350 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Susumu/KRL6432E-M-R002-G-T1?qs=FG09h9tFCuAdqAj8G1SUEg%3D%3D" H 8200 250 50  0001 L CNN "Mouser Price/Stock"
+	1    7650 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L BSC014N04LSI:BSC014N04LSI M5
-U 1 1 5FDAC617
-P 7850 6600
-F 0 "M5" H 8350 6865 50  0000 C CNN
-F 1 "BSC014N04LSI" H 8350 6774 50  0000 C CNN
-F 2 "BSC059N04LS6ATMA1" H 8700 6700 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 8700 6600 50  0001 L CNN
-F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 8700 6500 50  0001 L CNN "Description"
-F 5 "" H 8700 6400 50  0001 L CNN "Height"
-F 6 "Infineon" H 8700 6300 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSC014N04LSI" H 8700 6200 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 8700 6100 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 8700 6000 50  0001 L CNN "Arrow Price/Stock"
-F 10 "726-BSC014N04LSI" H 8700 5900 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 8700 5800 50  0001 L CNN "Mouser Price/Stock"
-	1    7850 6600
+L SamacSys_Parts:KRL6432E-M-R002-G-T1 R13
+U 1 1 5FE5D0B7
+P 7650 850
+F 0 "R13" H 8000 1075 50  0000 C CNN
+F 1 "KRL6432D-M-R002-G-T1" H 8000 984 50  0000 C CNN
+F 2 "RESC3163X70N" H 8200 900 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/KRL6432E-M-R002-G-T1.pdf" H 8200 800 50  0001 L CNN
+F 4 "Current Sense Resistors - SMD 3W 0.002ohm 1% 100ppm" H 8200 700 50  0001 L CNN "Description"
+F 5 "0.7" H 8200 600 50  0001 L CNN "Height"
+F 6 "Susumu" H 8200 500 50  0001 L CNN "Manufacturer_Name"
+F 7 "KRL6432E-M-R002-G-T1" H 8200 400 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 8200 300 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 8200 200 50  0001 L CNN "Arrow Price/Stock"
+F 10 "754-KRL6432EMR002GT1" H 8200 100 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Susumu/KRL6432E-M-R002-G-T1?qs=FG09h9tFCuAdqAj8G1SUEg%3D%3D" H 8200 0   50  0001 L CNN "Mouser Price/Stock"
+	1    7650 850 
 	1    0    0    -1  
 $EndComp
+Connection ~ 7500 1100
+Wire Wire Line
+	7250 1100 7500 1100
+Connection ~ 7250 1100
+Wire Wire Line
+	7250 1250 7250 1100
 $Comp
-L BSC014N04LSI:BSC014N04LSI M15
-U 1 1 5FDADB92
-P 5250 1850
-F 0 "M15" H 5750 2115 50  0000 C CNN
-F 1 "BSC014N04LSI" H 5750 2024 50  0000 C CNN
-F 2 "BSC059N04LS6ATMA1" H 6100 1950 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 6100 1850 50  0001 L CNN
-F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 6100 1750 50  0001 L CNN "Description"
-F 5 "" H 6100 1650 50  0001 L CNN "Height"
-F 6 "Infineon" H 6100 1550 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSC014N04LSI" H 6100 1450 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 6100 1350 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 6100 1250 50  0001 L CNN "Arrow Price/Stock"
-F 10 "726-BSC014N04LSI" H 6100 1150 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 6100 1050 50  0001 L CNN "Mouser Price/Stock"
-	1    5250 1850
+L Device:C_Small C42
+U 1 1 5FE55835
+P 7250 1350
+F 0 "C42" H 7342 1396 50  0000 L CNN
+F 1 "1uF" H 7342 1305 50  0000 L CNN
+F 2 "" H 7250 1350 50  0001 C CNN
+F 3 "~" H 7250 1350 50  0001 C CNN
+	1    7250 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L BSC014N04LSI:BSC014N04LSI M11
-U 1 1 5FDAE862
-P 6300 1100
-F 0 "M11" H 6800 1365 50  0000 C CNN
-F 1 "BSC014N04LSI" H 6800 1274 50  0000 C CNN
-F 2 "BSC059N04LS6ATMA1" H 7150 1200 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 7150 1100 50  0001 L CNN
-F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 7150 1000 50  0001 L CNN "Description"
-F 5 "" H 7150 900 50  0001 L CNN "Height"
-F 6 "Infineon" H 7150 800 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSC014N04LSI" H 7150 700 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 7150 600 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 7150 500 50  0001 L CNN "Arrow Price/Stock"
-F 10 "726-BSC014N04LSI" H 7150 400 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 7150 300 50  0001 L CNN "Mouser Price/Stock"
-	1    6300 1100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L BSC014N04LSI:BSC014N04LSI M1
-U 1 1 5FDAF34A
-P 7850 5850
-F 0 "M1" H 8350 6115 50  0000 C CNN
-F 1 "BSC014N04LSI" H 8350 6024 50  0000 C CNN
-F 2 "BSC059N04LS6ATMA1" H 8700 5950 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 8700 5850 50  0001 L CNN
-F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 8700 5750 50  0001 L CNN "Description"
-F 5 "" H 8700 5650 50  0001 L CNN "Height"
-F 6 "Infineon" H 8700 5550 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSC014N04LSI" H 8700 5450 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 8700 5350 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 8700 5250 50  0001 L CNN "Arrow Price/Stock"
-F 10 "726-BSC014N04LSI" H 8700 5150 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 8700 5050 50  0001 L CNN "Mouser Price/Stock"
-	1    7850 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L BSC010N04LSI:BSC010N04LSI M2
-U 1 1 5FDB0BF7
-P 7850 7600
-F 0 "M2" H 8350 7865 50  0000 C CNN
-F 1 "BSC010N04LSI" H 8350 7774 50  0000 C CNN
-F 2 "TDSON-8FL" H 8700 7700 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSC010N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552d84dc147dc" H 8700 7600 50  0001 L CNN
-F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 8700 7500 50  0001 L CNN "Description"
-F 5 "" H 8700 7400 50  0001 L CNN "Height"
-F 6 "Infineon" H 8700 7300 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSC010N04LSI" H 8700 7200 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 8700 7100 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 8700 7000 50  0001 L CNN "Arrow Price/Stock"
-F 10 "726-BSC010N04LSI" H 8700 6900 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC010N04LSI?qs=EUA%2Fg8wssK0bnYvE7pMDXw%3D%3D" H 8700 6800 50  0001 L CNN "Mouser Price/Stock"
-	1    7850 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L BSC010N04LSI:BSC010N04LSI M12
-U 1 1 5FDB29E3
-P 5000 2800
-F 0 "M12" H 5500 3065 50  0000 C CNN
-F 1 "BSC010N04LSI" H 5500 2974 50  0000 C CNN
-F 2 "TDSON-8FL" H 5850 2900 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSC010N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552d84dc147dc" H 5850 2800 50  0001 L CNN
-F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 5850 2700 50  0001 L CNN "Description"
-F 5 "" H 5850 2600 50  0001 L CNN "Height"
-F 6 "Infineon" H 5850 2500 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSC010N04LSI" H 5850 2400 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 5850 2300 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 5850 2200 50  0001 L CNN "Arrow Price/Stock"
-F 10 "726-BSC010N04LSI" H 5850 2100 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC010N04LSI?qs=EUA%2Fg8wssK0bnYvE7pMDXw%3D%3D" H 5850 2000 50  0001 L CNN "Mouser Price/Stock"
-	1    5000 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L BSC014N04LSI:BSC014N04LSI M3
-U 1 1 5FDD3144
-P 12400 7100
-F 0 "M3" H 12900 7365 50  0000 C CNN
-F 1 "BSC015NE2LS5I" H 12900 7274 50  0000 C CNN
-F 2 "BSC059N04LS6ATMA1" H 13250 7200 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 13250 7100 50  0001 L CNN
-F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 13250 7000 50  0001 L CNN "Description"
-F 5 "" H 13250 6900 50  0001 L CNN "Height"
-F 6 "Infineon" H 13250 6800 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSC014N04LSI" H 13250 6700 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 13250 6600 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 13250 6500 50  0001 L CNN "Arrow Price/Stock"
-F 10 "726-BSC014N04LSI" H 13250 6400 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 13250 6300 50  0001 L CNN "Mouser Price/Stock"
-	1    12400 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L BSC014N04LSI:BSC014N04LSI M4
-U 1 1 5FDD4073
-P 12400 5750
-F 0 "M4" H 12900 6015 50  0000 C CNN
-F 1 "BSC009NE2LS5I" H 12900 5924 50  0000 C CNN
-F 2 "BSC059N04LS6ATMA1" H 13250 5850 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 13250 5750 50  0001 L CNN
-F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 13250 5650 50  0001 L CNN "Description"
-F 5 "" H 13250 5550 50  0001 L CNN "Height"
-F 6 "Infineon" H 13250 5450 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSC014N04LSI" H 13250 5350 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 13250 5250 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 13250 5150 50  0001 L CNN "Arrow Price/Stock"
-F 10 "726-BSC014N04LSI" H 13250 5050 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 13250 4950 50  0001 L CNN "Mouser Price/Stock"
-	1    12400 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L BSC014N04LSI:BSC014N04LSI M7
-U 1 1 5FDD4AFA
-P 12400 7850
-F 0 "M7" H 12900 8115 50  0000 C CNN
-F 1 "BSC015NE2LS5I" H 12900 8024 50  0000 C CNN
-F 2 "BSC059N04LS6ATMA1" H 13250 7950 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 13250 7850 50  0001 L CNN
-F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 13250 7750 50  0001 L CNN "Description"
-F 5 "" H 13250 7650 50  0001 L CNN "Height"
-F 6 "Infineon" H 13250 7550 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSC014N04LSI" H 13250 7450 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 13250 7350 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 13250 7250 50  0001 L CNN "Arrow Price/Stock"
-F 10 "726-BSC014N04LSI" H 13250 7150 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 13250 7050 50  0001 L CNN "Mouser Price/Stock"
-	1    12400 7850
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	5100 1100 7250 1100
+Wire Wire Line
+	5000 2450 6550 2450
+Wire Wire Line
+	6450 1750 7350 1750
 $Comp
 L BSC014N04LSI:BSC014N04LSI M14
 U 1 1 5FDD55FD
-P 8700 1300
-F 0 "M14" H 9200 1565 50  0000 C CNN
-F 1 "BSC009NE2LS5I" H 9200 1474 50  0000 C CNN
-F 2 "BSC059N04LS6ATMA1" H 9550 1400 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 9550 1300 50  0001 L CNN
-F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 9550 1200 50  0001 L CNN "Description"
-F 5 "" H 9550 1100 50  0001 L CNN "Height"
-F 6 "Infineon" H 9550 1000 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSC014N04LSI" H 9550 900 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 9550 800 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 9550 700 50  0001 L CNN "Arrow Price/Stock"
-F 10 "726-BSC014N04LSI" H 9550 600 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 9550 500 50  0001 L CNN "Mouser Price/Stock"
-	1    8700 1300
+P 10000 1100
+F 0 "M14" H 10500 1365 50  0000 C CNN
+F 1 "BSC009NE2LS5I" H 10500 1274 50  0000 C CNN
+F 2 "BSC059N04LS6ATMA1" H 10850 1200 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 10850 1100 50  0001 L CNN
+F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 10850 1000 50  0001 L CNN "Description"
+F 5 "" H 10850 900 50  0001 L CNN "Height"
+F 6 "Infineon" H 10850 800 50  0001 L CNN "Manufacturer_Name"
+F 7 "BSC014N04LSI" H 10850 700 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 10850 600 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 10850 500 50  0001 L CNN "Arrow Price/Stock"
+F 10 "726-BSC014N04LSI" H 10850 400 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 10850 300 50  0001 L CNN "Mouser Price/Stock"
+	1    10000 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 3050
+Wire Wire Line
+	6450 3050 5950 3050
+$Comp
+L Device:R_Small_US R22
+U 1 1 6047391A
+P 14350 1300
+F 0 "R22" H 14418 1346 50  0000 L CNN
+F 1 "604K" H 14418 1255 50  0000 L CNN
+F 2 "" H 14350 1300 50  0001 C CNN
+F 3 "~" H 14350 1300 50  0001 C CNN
+	1    14350 1300
 	1    0    0    -1  
 $EndComp
 $Comp
-L BSC014N04LSI:BSC014N04LSI M13
-U 1 1 5FDD8A9F
-P 10150 2350
-F 0 "M13" H 10650 2615 50  0000 C CNN
-F 1 "BSC015NE2LS5I" H 10650 2524 50  0000 C CNN
-F 2 "BSC059N04LS6ATMA1" H 11000 2450 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 11000 2350 50  0001 L CNN
-F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 11000 2250 50  0001 L CNN "Description"
-F 5 "" H 11000 2150 50  0001 L CNN "Height"
-F 6 "Infineon" H 11000 2050 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSC014N04LSI" H 11000 1950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 11000 1850 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 11000 1750 50  0001 L CNN "Arrow Price/Stock"
-F 10 "726-BSC014N04LSI" H 11000 1650 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 11000 1550 50  0001 L CNN "Mouser Price/Stock"
-	1    10150 2350
+L Device:R_Small_US R23
+U 1 1 6047585F
+P 14350 1700
+F 0 "R23" H 14418 1746 50  0000 L CNN
+F 1 "49.9K" H 14418 1655 50  0000 L CNN
+F 2 "" H 14350 1700 50  0001 C CNN
+F 3 "~" H 14350 1700 50  0001 C CNN
+	1    14350 1700
 	1    0    0    -1  
 $EndComp
 $Comp
-L BSC014N04LSI:BSC014N04LSI M17
-U 1 1 5FDD8C6D
-P 10150 3100
-F 0 "M17" H 10650 3365 50  0000 C CNN
-F 1 "BSC015NE2LS5I" H 10650 3274 50  0000 C CNN
-F 2 "BSC059N04LS6ATMA1" H 11000 3200 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSC014N04LSI-DS-v02_02-EN.pdf?fileId=db3a3043353fdc16013552fc8f274806" H 11000 3100 50  0001 L CNN
-F 4 "MOSFET N-Ch 40V 100A TDSON-8 FL OptiMOS" H 11000 3000 50  0001 L CNN "Description"
-F 5 "" H 11000 2900 50  0001 L CNN "Height"
-F 6 "Infineon" H 11000 2800 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSC014N04LSI" H 11000 2700 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 11000 2600 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 11000 2500 50  0001 L CNN "Arrow Price/Stock"
-F 10 "726-BSC014N04LSI" H 11000 2400 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSC014N04LSI?qs=EUA%2Fg8wssK0pTQXNTFzAjQ%3D%3D" H 11000 2300 50  0001 L CNN "Mouser Price/Stock"
-	1    10150 3100
+L power:GND #PWR024
+U 1 1 60475B18
+P 14350 1950
+F 0 "#PWR024" H 14350 1700 50  0001 C CNN
+F 1 "GND" H 14355 1777 50  0000 C CNN
+F 2 "" H 14350 1950 50  0001 C CNN
+F 3 "" H 14350 1950 50  0001 C CNN
+	1    14350 1950
 	1    0    0    -1  
 $EndComp
+Text Label 14450 1500 0    50   ~ 0
+FB
+Wire Wire Line
+	14050 1100 14350 1100
+Wire Wire Line
+	14350 1100 14350 1200
+Wire Wire Line
+	14350 1400 14350 1500
+Wire Wire Line
+	14450 1500 14350 1500
+Connection ~ 14350 1500
+Wire Wire Line
+	14350 1500 14350 1600
+Wire Wire Line
+	14350 1800 14350 1950
 $Comp
-L LTC6908HS6-2TRPBF:LTC6908HS6-2TRPBF U?
-U 1 1 5FDB83AE
-P 5450 4950
-F 0 "U?" H 5450 5420 50  0000 C CNN
-F 1 "LTC6908HS6-2TRPBF" H 5450 5329 50  0000 C CNN
-F 2 "SOT95P280X100-6N" H 5450 4950 50  0001 L BNN
-F 3 "" H 5450 4950 50  0001 L BNN
-F 4 "LTC6908HS6-2#TRPBF" H 5450 4950 50  0001 L BNN "MPN"
-F 5 "-" H 5450 4950 50  0001 L BNN "OC_FARNELL"
-F 6 "51P4610" H 5450 4950 50  0001 L BNN "OC_NEWARK"
-F 7 "TSOP-23-6" H 5450 4950 50  0001 L BNN "PACKAGE"
-F 8 "Linear Technology" H 5450 4950 50  0001 L BNN "SUPPLIER"
-	1    5450 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 4950 6550 4950
-Wire Wire Line
-	8450 4850 8450 2750
-Wire Wire Line
-	8450 2750 8150 2750
-Wire Wire Line
-	6150 4850 6150 4400
-Wire Wire Line
-	6150 4400 4550 4400
-Wire Wire Line
-	4550 4400 4550 5050
-Wire Wire Line
-	4550 5050 4750 5050
-Text Label 4700 4400 0    50   ~ 0
-SYNC1
-Text Label 11700 7500 0    50   ~ 0
-SYNC1
-$Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 5FDC6F74
-P 900 5100
-F 0 "J?" H 818 4775 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 818 4866 50  0000 C CNN
-F 2 "" H 900 5100 50  0001 C CNN
-F 3 "~" H 900 5100 50  0001 C CNN
-	1    900  5100
-	-1   0    0    1   
+L SamacSys_Parts:16SVF560M C55
+U 1 1 604B6BF7
+P 14750 1100
+F 0 "C55" V 14954 1230 50  0000 L CNN
+F 1 "16SVF560M" V 14650 1000 50  0000 L CNN
+F 2 "CAPAE830X1200N" H 15100 1150 50  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Capacitors%20PDFs/SVF_Series_DS.pdf" H 15100 1050 50  0001 L CNN
+F 4 "Aluminum Organic Polymer Capacitors 560uf 16volts 4.95A OS-CON Polymer" H 15100 950 50  0001 L CNN "Description"
+F 5 "12" H 15100 850 50  0001 L CNN "Height"
+F 6 "Panasonic" H 15100 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "16SVF560M" H 15100 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "16SVF560M" H 15100 550 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/16svf560m/panasonic" H 15100 450 50  0001 L CNN "Arrow Price/Stock"
+F 10 "667-16SVF560M" H 15100 350 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Panasonic/16SVF560M/?qs=KTDjhDDUMAmQ85MU40IRZQ%3D%3D" H 15100 250 50  0001 L CNN "Mouser Price/Stock"
+	1    14750 1100
+	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5FDC7975
-P 1100 5300
-F 0 "#PWR?" H 1100 5050 50  0001 C CNN
-F 1 "GND" H 1105 5127 50  0000 C CNN
-F 2 "" H 1100 5300 50  0001 C CNN
-F 3 "" H 1100 5300 50  0001 C CNN
-	1    1100 5300
-	1    0    0    -1  
+L SamacSys_Parts:16SVF560M C56
+U 1 1 604B70E7
+P 15000 1100
+F 0 "C56" V 15250 1230 50  0000 L CNN
+F 1 "16SVF560M" V 15295 1230 50  0001 L CNN
+F 2 "CAPAE830X1200N" H 15350 1150 50  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Capacitors%20PDFs/SVF_Series_DS.pdf" H 15350 1050 50  0001 L CNN
+F 4 "Aluminum Organic Polymer Capacitors 560uf 16volts 4.95A OS-CON Polymer" H 15350 950 50  0001 L CNN "Description"
+F 5 "12" H 15350 850 50  0001 L CNN "Height"
+F 6 "Panasonic" H 15350 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "16SVF560M" H 15350 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "16SVF560M" H 15350 550 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/16svf560m/panasonic" H 15350 450 50  0001 L CNN "Arrow Price/Stock"
+F 10 "667-16SVF560M" H 15350 350 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Panasonic/16SVF560M/?qs=KTDjhDDUMAmQ85MU40IRZQ%3D%3D" H 15350 250 50  0001 L CNN "Mouser Price/Stock"
+	1    15000 1100
+	0    1    1    0   
 $EndComp
-Text Label 1300 5000 0    50   ~ 0
-Vin
 Wire Wire Line
-	1100 5000 1300 5000
+	14350 1100 14750 1100
 Wire Wire Line
-	1100 5100 1100 5300
-Text Label 700  1100 0    50   ~ 0
-Vin
+	14750 1100 15000 1100
+Connection ~ 14750 1100
+Wire Wire Line
+	14750 1600 14850 1600
 $Comp
-L power:GND #PWR?
-U 1 1 5FDC60F6
-P 2150 1950
-F 0 "#PWR?" H 2150 1700 50  0001 C CNN
-F 1 "GND" H 2155 1777 50  0000 C CNN
-F 2 "" H 2150 1950 50  0001 C CNN
-F 3 "" H 2150 1950 50  0001 C CNN
-	1    2150 1950
+L power:GND #PWR025
+U 1 1 604B70F5
+P 14850 1700
+F 0 "#PWR025" H 14850 1450 50  0001 C CNN
+F 1 "GND" H 14855 1527 50  0000 C CNN
+F 2 "" H 14850 1700 50  0001 C CNN
+F 3 "" H 14850 1700 50  0001 C CNN
+	1    14850 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 1700 1100 1800
-Wire Wire Line
-	1100 1800 1350 1800
-Wire Wire Line
-	1350 1700 1350 1800
-Connection ~ 1350 1800
-Wire Wire Line
-	1850 1700 1850 1800
-Wire Wire Line
-	1850 1800 1600 1800
-Wire Wire Line
-	1600 1700 1600 1800
-Connection ~ 1600 1800
-$Comp
-L SamacSys_Parts:C3216X7R1H106K160AE C?
-U 1 1 5FDC9AE3
-P 2400 1200
-F 0 "C?" V 2604 1328 50  0000 L CNN
-F 1 "C3216X7R1H106K160AE" V 2695 1328 50  0000 L CNN
-F 2 "CAPC3216X180N" H 2750 1250 50  0001 L CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 2750 1150 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 50VDC 10uF 10% X7R SOFT TERM" H 2750 1050 50  0001 L CNN "Description"
-F 5 "1.8" H 2750 950 50  0001 L CNN "Height"
-F 6 "TDK" H 2750 850 50  0001 L CNN "Manufacturer_Name"
-F 7 "C3216X7R1H106K160AE" H 2750 750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 2750 650 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 2750 550 50  0001 L CNN "Arrow Price/Stock"
-F 10 "810-C3216X7R1H106160" H 2750 450 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X7R1H106K160AE/?qs=P1JMDcb91o5x9yNYwFTXAw%3D%3D" H 2750 350 50  0001 L CNN "Mouser Price/Stock"
-	1    2400 1200
-	0    1    1    0   
-$EndComp
-$Comp
-L SamacSys_Parts:C3216X7R1H106K160AE C?
-U 1 1 5FDD0AB0
-P 2650 1200
-F 0 "C?" V 2854 1328 50  0000 L CNN
-F 1 "C3216X7R1H106K160AE" V 2945 1328 50  0000 L CNN
-F 2 "CAPC3216X180N" H 3000 1250 50  0001 L CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 3000 1150 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 50VDC 10uF 10% X7R SOFT TERM" H 3000 1050 50  0001 L CNN "Description"
-F 5 "1.8" H 3000 950 50  0001 L CNN "Height"
-F 6 "TDK" H 3000 850 50  0001 L CNN "Manufacturer_Name"
-F 7 "C3216X7R1H106K160AE" H 3000 750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 3000 650 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 3000 550 50  0001 L CNN "Arrow Price/Stock"
-F 10 "810-C3216X7R1H106160" H 3000 450 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X7R1H106K160AE/?qs=P1JMDcb91o5x9yNYwFTXAw%3D%3D" H 3000 350 50  0001 L CNN "Mouser Price/Stock"
-	1    2650 1200
-	0    1    1    0   
-$EndComp
-$Comp
-L SamacSys_Parts:C3216X7R1H106K160AE C?
-U 1 1 5FDD145B
-P 2900 1200
-F 0 "C?" V 3104 1328 50  0000 L CNN
-F 1 "C3216X7R1H106K160AE" V 3195 1328 50  0000 L CNN
-F 2 "CAPC3216X180N" H 3250 1250 50  0001 L CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 3250 1150 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 50VDC 10uF 10% X7R SOFT TERM" H 3250 1050 50  0001 L CNN "Description"
-F 5 "1.8" H 3250 950 50  0001 L CNN "Height"
-F 6 "TDK" H 3250 850 50  0001 L CNN "Manufacturer_Name"
-F 7 "C3216X7R1H106K160AE" H 3250 750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 3250 650 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 3250 550 50  0001 L CNN "Arrow Price/Stock"
-F 10 "810-C3216X7R1H106160" H 3250 450 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X7R1H106K160AE/?qs=P1JMDcb91o5x9yNYwFTXAw%3D%3D" H 3250 350 50  0001 L CNN "Mouser Price/Stock"
-	1    2900 1200
-	0    1    1    0   
-$EndComp
-$Comp
-L SamacSys_Parts:C3216X7R1H106K160AE C?
-U 1 1 5FDD1B56
-P 3150 1200
-F 0 "C?" V 3354 1328 50  0000 L CNN
-F 1 "C3216X7R1H106K160AE" V 2950 400 50  0000 L CNN
-F 2 "CAPC3216X180N" H 3500 1250 50  0001 L CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 3500 1150 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 50VDC 10uF 10% X7R SOFT TERM" H 3500 1050 50  0001 L CNN "Description"
-F 5 "1.8" H 3500 950 50  0001 L CNN "Height"
-F 6 "TDK" H 3500 850 50  0001 L CNN "Manufacturer_Name"
-F 7 "C3216X7R1H106K160AE" H 3500 750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 3500 650 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 3500 550 50  0001 L CNN "Arrow Price/Stock"
-F 10 "810-C3216X7R1H106160" H 3500 450 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X7R1H106K160AE/?qs=P1JMDcb91o5x9yNYwFTXAw%3D%3D" H 3500 350 50  0001 L CNN "Mouser Price/Stock"
-	1    3150 1200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3150 1100 3150 1200
-Wire Wire Line
-	2900 1200 2900 1100
-Connection ~ 2900 1100
-Wire Wire Line
-	2900 1100 3150 1100
-Wire Wire Line
-	2650 1200 2650 1100
-Connection ~ 2650 1100
-Wire Wire Line
-	2650 1100 2900 1100
-Wire Wire Line
-	2400 1200 2400 1100
-Connection ~ 2400 1100
-Wire Wire Line
-	2400 1100 2650 1100
-Wire Wire Line
-	1850 1800 2150 1800
-Wire Wire Line
-	3150 1800 3150 1700
-Connection ~ 1850 1800
-Wire Wire Line
-	2900 1700 2900 1800
-Connection ~ 2900 1800
-Wire Wire Line
-	2900 1800 3150 1800
-Wire Wire Line
-	2650 1700 2650 1800
-Connection ~ 2650 1800
-Wire Wire Line
-	2650 1800 2900 1800
-Wire Wire Line
-	2400 1700 2400 1800
-Connection ~ 2400 1800
-Wire Wire Line
-	2400 1800 2650 1800
-$Comp
-L EEE-FK1E330P:EEE-FK1E330P C?
-U 1 1 5FDDAB26
-P 1100 1200
-F 0 "C?" V 1304 1330 50  0000 L CNN
-F 1 "EEE-FK1E330P" V 1395 1330 50  0000 L CNN
-F 2 "CAPAE660X610N" H 1450 1250 50  0001 L CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 1450 1150 50  0001 L CNN
-F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 1450 1050 50  0001 L CNN "Description"
-F 5 "6.1" H 1450 950 50  0001 L CNN "Height"
-F 6 "Panasonic" H 1450 850 50  0001 L CNN "Manufacturer_Name"
-F 7 "EEE-FK1E330P" H 1450 750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 1450 650 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 1450 550 50  0001 L CNN "Arrow Price/Stock"
-F 10 "667-EEE-FK1E330P" H 1450 450 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 1450 350 50  0001 L CNN "Mouser Price/Stock"
-	1    1100 1200
-	0    1    1    0   
-$EndComp
-$Comp
-L EEE-FK1E330P:EEE-FK1E330P C?
-U 1 1 5FDDBC29
-P 1350 1200
-F 0 "C?" V 1554 1330 50  0000 L CNN
-F 1 "EEE-FK1E330P" V 1645 1330 50  0000 L CNN
-F 2 "CAPAE660X610N" H 1700 1250 50  0001 L CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 1700 1150 50  0001 L CNN
-F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 1700 1050 50  0001 L CNN "Description"
-F 5 "6.1" H 1700 950 50  0001 L CNN "Height"
-F 6 "Panasonic" H 1700 850 50  0001 L CNN "Manufacturer_Name"
-F 7 "EEE-FK1E330P" H 1700 750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 1700 650 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 1700 550 50  0001 L CNN "Arrow Price/Stock"
-F 10 "667-EEE-FK1E330P" H 1700 450 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 1700 350 50  0001 L CNN "Mouser Price/Stock"
-	1    1350 1200
-	0    1    1    0   
-$EndComp
-$Comp
-L EEE-FK1E330P:EEE-FK1E330P C?
-U 1 1 5FDDC41E
-P 1600 1200
-F 0 "C?" V 1804 1330 50  0000 L CNN
-F 1 "EEE-FK1E330P" V 1895 1330 50  0000 L CNN
-F 2 "CAPAE660X610N" H 1950 1250 50  0001 L CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 1950 1150 50  0001 L CNN
-F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 1950 1050 50  0001 L CNN "Description"
-F 5 "6.1" H 1950 950 50  0001 L CNN "Height"
-F 6 "Panasonic" H 1950 850 50  0001 L CNN "Manufacturer_Name"
-F 7 "EEE-FK1E330P" H 1950 750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 1950 650 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 1950 550 50  0001 L CNN "Arrow Price/Stock"
-F 10 "667-EEE-FK1E330P" H 1950 450 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 1950 350 50  0001 L CNN "Mouser Price/Stock"
-	1    1600 1200
-	0    1    1    0   
-$EndComp
-$Comp
-L EEE-FK1E330P:EEE-FK1E330P C?
-U 1 1 5FDDCE9E
-P 1850 1200
-F 0 "C?" V 2054 1330 50  0000 L CNN
-F 1 "EEE-FK1E330P" V 1650 550 50  0000 L CNN
-F 2 "CAPAE660X610N" H 2200 1250 50  0001 L CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 2200 1150 50  0001 L CNN
-F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 2200 1050 50  0001 L CNN "Description"
-F 5 "6.1" H 2200 950 50  0001 L CNN "Height"
-F 6 "Panasonic" H 2200 850 50  0001 L CNN "Manufacturer_Name"
-F 7 "EEE-FK1E330P" H 2200 750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 2200 650 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 2200 550 50  0001 L CNN "Arrow Price/Stock"
-F 10 "667-EEE-FK1E330P" H 2200 450 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 2200 350 50  0001 L CNN "Mouser Price/Stock"
-	1    1850 1200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	700  1100 1100 1100
-Wire Wire Line
-	1100 1200 1100 1100
-Connection ~ 1100 1100
-Wire Wire Line
-	1100 1100 1350 1100
-Wire Wire Line
-	1350 1200 1350 1100
-Connection ~ 1350 1100
-Wire Wire Line
-	1350 1100 1600 1100
-Wire Wire Line
-	1600 1200 1600 1100
-Connection ~ 1600 1100
-Wire Wire Line
-	1600 1100 1850 1100
-Wire Wire Line
-	1850 1200 1850 1100
-Connection ~ 1850 1100
-Wire Wire Line
-	1850 1100 2400 1100
-Wire Wire Line
-	1350 1800 1600 1800
-Wire Wire Line
-	2150 1950 2150 1800
-Connection ~ 2150 1800
-Wire Wire Line
-	2150 1800 2400 1800
-Text Label 750  6300 0    50   ~ 0
-Vin
-$Comp
-L power:GND #PWR?
-U 1 1 5FDE8D9A
-P 2200 7150
-F 0 "#PWR?" H 2200 6900 50  0001 C CNN
-F 1 "GND" H 2205 6977 50  0000 C CNN
-F 2 "" H 2200 7150 50  0001 C CNN
-F 3 "" H 2200 7150 50  0001 C CNN
-	1    2200 7150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 6900 1150 7000
-Wire Wire Line
-	1150 7000 1400 7000
-Wire Wire Line
-	1400 6900 1400 7000
-Connection ~ 1400 7000
-Wire Wire Line
-	1900 6900 1900 7000
-Wire Wire Line
-	1900 7000 1650 7000
-Wire Wire Line
-	1650 6900 1650 7000
-Connection ~ 1650 7000
-$Comp
-L SamacSys_Parts:C3216X7R1H106K160AE C?
-U 1 1 5FDE8DB4
-P 2450 6400
-F 0 "C?" V 2654 6528 50  0000 L CNN
-F 1 "C3216X7R1H106K160AE" V 2745 6528 50  0000 L CNN
-F 2 "CAPC3216X180N" H 2800 6450 50  0001 L CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 2800 6350 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 50VDC 10uF 10% X7R SOFT TERM" H 2800 6250 50  0001 L CNN "Description"
-F 5 "1.8" H 2800 6150 50  0001 L CNN "Height"
-F 6 "TDK" H 2800 6050 50  0001 L CNN "Manufacturer_Name"
-F 7 "C3216X7R1H106K160AE" H 2800 5950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 2800 5850 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 2800 5750 50  0001 L CNN "Arrow Price/Stock"
-F 10 "810-C3216X7R1H106160" H 2800 5650 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X7R1H106K160AE/?qs=P1JMDcb91o5x9yNYwFTXAw%3D%3D" H 2800 5550 50  0001 L CNN "Mouser Price/Stock"
-	1    2450 6400
-	0    1    1    0   
-$EndComp
-$Comp
-L SamacSys_Parts:C3216X7R1H106K160AE C?
-U 1 1 5FDE8DC6
-P 2700 6400
-F 0 "C?" V 2904 6528 50  0000 L CNN
-F 1 "C3216X7R1H106K160AE" V 2995 6528 50  0000 L CNN
-F 2 "CAPC3216X180N" H 3050 6450 50  0001 L CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 3050 6350 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 50VDC 10uF 10% X7R SOFT TERM" H 3050 6250 50  0001 L CNN "Description"
-F 5 "1.8" H 3050 6150 50  0001 L CNN "Height"
-F 6 "TDK" H 3050 6050 50  0001 L CNN "Manufacturer_Name"
-F 7 "C3216X7R1H106K160AE" H 3050 5950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 3050 5850 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 3050 5750 50  0001 L CNN "Arrow Price/Stock"
-F 10 "810-C3216X7R1H106160" H 3050 5650 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X7R1H106K160AE/?qs=P1JMDcb91o5x9yNYwFTXAw%3D%3D" H 3050 5550 50  0001 L CNN "Mouser Price/Stock"
-	1    2700 6400
-	0    1    1    0   
-$EndComp
-$Comp
-L SamacSys_Parts:C3216X7R1H106K160AE C?
-U 1 1 5FDE8DD8
-P 2950 6400
-F 0 "C?" V 3154 6528 50  0000 L CNN
-F 1 "C3216X7R1H106K160AE" V 3245 6528 50  0000 L CNN
-F 2 "CAPC3216X180N" H 3300 6450 50  0001 L CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 3300 6350 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 50VDC 10uF 10% X7R SOFT TERM" H 3300 6250 50  0001 L CNN "Description"
-F 5 "1.8" H 3300 6150 50  0001 L CNN "Height"
-F 6 "TDK" H 3300 6050 50  0001 L CNN "Manufacturer_Name"
-F 7 "C3216X7R1H106K160AE" H 3300 5950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 3300 5850 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 3300 5750 50  0001 L CNN "Arrow Price/Stock"
-F 10 "810-C3216X7R1H106160" H 3300 5650 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X7R1H106K160AE/?qs=P1JMDcb91o5x9yNYwFTXAw%3D%3D" H 3300 5550 50  0001 L CNN "Mouser Price/Stock"
-	1    2950 6400
-	0    1    1    0   
-$EndComp
-$Comp
-L SamacSys_Parts:C3216X7R1H106K160AE C?
-U 1 1 5FDE8DEA
-P 3200 6400
-F 0 "C?" V 3404 6528 50  0000 L CNN
-F 1 "C3216X7R1H106K160AE" V 3000 5600 50  0000 L CNN
-F 2 "CAPC3216X180N" H 3550 6450 50  0001 L CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 3550 6350 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1206 50VDC 10uF 10% X7R SOFT TERM" H 3550 6250 50  0001 L CNN "Description"
-F 5 "1.8" H 3550 6150 50  0001 L CNN "Height"
-F 6 "TDK" H 3550 6050 50  0001 L CNN "Manufacturer_Name"
-F 7 "C3216X7R1H106K160AE" H 3550 5950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 3550 5850 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 3550 5750 50  0001 L CNN "Arrow Price/Stock"
-F 10 "810-C3216X7R1H106160" H 3550 5650 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X7R1H106K160AE/?qs=P1JMDcb91o5x9yNYwFTXAw%3D%3D" H 3550 5550 50  0001 L CNN "Mouser Price/Stock"
-	1    3200 6400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3200 6300 3200 6400
-Wire Wire Line
-	2950 6400 2950 6300
-Connection ~ 2950 6300
-Wire Wire Line
-	2950 6300 3200 6300
-Wire Wire Line
-	2700 6400 2700 6300
-Connection ~ 2700 6300
-Wire Wire Line
-	2700 6300 2950 6300
-Wire Wire Line
-	2450 6400 2450 6300
-Connection ~ 2450 6300
-Wire Wire Line
-	2450 6300 2700 6300
-Wire Wire Line
-	1900 7000 2200 7000
-Wire Wire Line
-	3200 7000 3200 6900
-Connection ~ 1900 7000
-Wire Wire Line
-	2950 6900 2950 7000
-Connection ~ 2950 7000
-Wire Wire Line
-	2950 7000 3200 7000
-Wire Wire Line
-	2700 6900 2700 7000
-Connection ~ 2700 7000
-Wire Wire Line
-	2700 7000 2950 7000
-Wire Wire Line
-	2450 6900 2450 7000
-Connection ~ 2450 7000
-Wire Wire Line
-	2450 7000 2700 7000
-$Comp
-L EEE-FK1E330P:EEE-FK1E330P C?
-U 1 1 5FDE8E12
-P 1150 6400
-F 0 "C?" V 1354 6530 50  0000 L CNN
-F 1 "EEE-FK1E330P" V 1445 6530 50  0000 L CNN
-F 2 "CAPAE660X610N" H 1500 6450 50  0001 L CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 1500 6350 50  0001 L CNN
-F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 1500 6250 50  0001 L CNN "Description"
-F 5 "6.1" H 1500 6150 50  0001 L CNN "Height"
-F 6 "Panasonic" H 1500 6050 50  0001 L CNN "Manufacturer_Name"
-F 7 "EEE-FK1E330P" H 1500 5950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 1500 5850 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 1500 5750 50  0001 L CNN "Arrow Price/Stock"
-F 10 "667-EEE-FK1E330P" H 1500 5650 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 1500 5550 50  0001 L CNN "Mouser Price/Stock"
-	1    1150 6400
-	0    1    1    0   
-$EndComp
-$Comp
-L EEE-FK1E330P:EEE-FK1E330P C?
-U 1 1 5FDE8E24
-P 1400 6400
-F 0 "C?" V 1604 6530 50  0000 L CNN
-F 1 "EEE-FK1E330P" V 1695 6530 50  0000 L CNN
-F 2 "CAPAE660X610N" H 1750 6450 50  0001 L CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 1750 6350 50  0001 L CNN
-F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 1750 6250 50  0001 L CNN "Description"
-F 5 "6.1" H 1750 6150 50  0001 L CNN "Height"
-F 6 "Panasonic" H 1750 6050 50  0001 L CNN "Manufacturer_Name"
-F 7 "EEE-FK1E330P" H 1750 5950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 1750 5850 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 1750 5750 50  0001 L CNN "Arrow Price/Stock"
-F 10 "667-EEE-FK1E330P" H 1750 5650 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 1750 5550 50  0001 L CNN "Mouser Price/Stock"
-	1    1400 6400
-	0    1    1    0   
-$EndComp
-$Comp
-L EEE-FK1E330P:EEE-FK1E330P C?
-U 1 1 5FDE8E36
-P 1650 6400
-F 0 "C?" V 1854 6530 50  0000 L CNN
-F 1 "EEE-FK1E330P" V 1945 6530 50  0000 L CNN
-F 2 "CAPAE660X610N" H 2000 6450 50  0001 L CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 2000 6350 50  0001 L CNN
-F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 2000 6250 50  0001 L CNN "Description"
-F 5 "6.1" H 2000 6150 50  0001 L CNN "Height"
-F 6 "Panasonic" H 2000 6050 50  0001 L CNN "Manufacturer_Name"
-F 7 "EEE-FK1E330P" H 2000 5950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 2000 5850 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 2000 5750 50  0001 L CNN "Arrow Price/Stock"
-F 10 "667-EEE-FK1E330P" H 2000 5650 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 2000 5550 50  0001 L CNN "Mouser Price/Stock"
-	1    1650 6400
-	0    1    1    0   
-$EndComp
-$Comp
-L EEE-FK1E330P:EEE-FK1E330P C?
-U 1 1 5FDE8E48
-P 1900 6400
-F 0 "C?" V 2104 6530 50  0000 L CNN
-F 1 "EEE-FK1E330P" V 1700 5750 50  0000 L CNN
-F 2 "CAPAE660X610N" H 2250 6450 50  0001 L CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf" H 2250 6350 50  0001 L CNN
-F 4 "PANASONIC ELECTRONIC COMPONENTS - EEE-FK1E330P - ALUMINUM ELECTROLYTIC CAPACITOR, 33UF, 20%, 25V, SMD, FULL REEL" H 2250 6250 50  0001 L CNN "Description"
-F 5 "6.1" H 2250 6150 50  0001 L CNN "Height"
-F 6 "Panasonic" H 2250 6050 50  0001 L CNN "Manufacturer_Name"
-F 7 "EEE-FK1E330P" H 2250 5950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 2250 5850 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 2250 5750 50  0001 L CNN "Arrow Price/Stock"
-F 10 "667-EEE-FK1E330P" H 2250 5650 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FK1E330P" H 2250 5550 50  0001 L CNN "Mouser Price/Stock"
-	1    1900 6400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	750  6300 1150 6300
-Wire Wire Line
-	1150 6400 1150 6300
-Connection ~ 1150 6300
-Wire Wire Line
-	1150 6300 1400 6300
-Wire Wire Line
-	1400 6400 1400 6300
-Connection ~ 1400 6300
-Wire Wire Line
-	1400 6300 1650 6300
-Wire Wire Line
-	1650 6400 1650 6300
-Connection ~ 1650 6300
-Wire Wire Line
-	1650 6300 1900 6300
-Wire Wire Line
-	1900 6400 1900 6300
-Connection ~ 1900 6300
-Wire Wire Line
-	1900 6300 2450 6300
-Wire Wire Line
-	1400 7000 1650 7000
-Wire Wire Line
-	2200 7150 2200 7000
-Connection ~ 2200 7000
-Wire Wire Line
-	2200 7000 2450 7000
+	14850 1700 14850 1600
+Connection ~ 14850 1600
+Wire Wire Line
+	14850 1600 15000 1600
+Wire Wire Line
+	15000 1100 15300 1100
+Connection ~ 15000 1100
+Connection ~ 14350 1100
+Text Label 15300 1100 0    50   ~ 0
+U2OUT
 $EndSCHEMATC

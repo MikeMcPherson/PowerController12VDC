@@ -174,4 +174,6 @@ Text HLabel 7200 4250 2    50   Output ~ 0
 TDO
 Text HLabel 7200 4350 2    50   Output ~ 0
 TDI
+Text Notes 7900 2650 0    197  ~ 0
+Add optical isolators
 $EndSCHEMATC
