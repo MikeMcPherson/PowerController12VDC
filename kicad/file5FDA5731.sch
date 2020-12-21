@@ -3140,12 +3140,6 @@ Connection ~ 13100 6550
 Connection ~ 13350 6550
 Wire Wire Line
 	13200 6550 13350 6550
-Wire Wire Line
-	15300 1100 15300 5300
-Wire Wire Line
-	15300 5300 13600 5300
-Wire Wire Line
-	13600 5300 13600 6050
 Text Label 7550 8900 3    50   ~ 0
 U1ISMON
 Wire Wire Line
@@ -3335,4 +3329,60 @@ Wire Wire Line
 	15450 8350 15450 8400
 Text Notes 16250 8350 2    50   ~ 0
 +3V3 to\ndisable regulator
+Wire Wire Line
+	13600 3100 13600 6050
+Wire Wire Line
+	15300 1100 15300 3100
+Wire Wire Line
+	15300 3100 13600 3100
+$Comp
+L SamacSys_Parts:KRL6432E-C-R006-F-T1 R?
+U 1 1 5FFA054E
+P 14100 5200
+F 0 "R?" H 14450 5425 50  0000 C CNN
+F 1 "KRL6432D-M-R006-G-T1" H 14450 5334 50  0000 C CNN
+F 2 "RESC3163X50N" H 14650 5250 50  0001 L CNN
+F 3 "http://www.mouser.com/datasheet/2/392/n_catalog_partition19_en-1114600.pdf" H 14650 5150 50  0001 L CNN
+F 4 "Current Sense Resistors - SMD 0.006 ohm 1% 3.0W" H 14650 5050 50  0001 L CNN "Description"
+F 5 "0.5" H 14650 4950 50  0001 L CNN "Height"
+F 6 "Susumu" H 14650 4850 50  0001 L CNN "Manufacturer_Name"
+F 7 "KRL6432E-C-R006-F-T1" H 14650 4750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 14650 4650 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 14650 4550 50  0001 L CNN "Arrow Price/Stock"
+F 10 "754-KRL6432ECR006FT1" H 14650 4450 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Susumu/KRL6432E-C-R006-F-T1/?qs=lc2O%252BfHJPVZeFQbLV4n%2Fcw%3D%3D" H 14650 4350 50  0001 L CNN "Mouser Price/Stock"
+	1    14100 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:KRL6432E-C-R006-F-T1 R?
+U 1 1 5FFA1008
+P 14100 5450
+F 0 "R?" H 14450 5600 50  0000 C CNN
+F 1 "KRL6432D-M-R006-G-T1" H 14450 5550 50  0000 C CNN
+F 2 "RESC3163X50N" H 14650 5500 50  0001 L CNN
+F 3 "http://www.mouser.com/datasheet/2/392/n_catalog_partition19_en-1114600.pdf" H 14650 5400 50  0001 L CNN
+F 4 "Current Sense Resistors - SMD 0.006 ohm 1% 3.0W" H 14650 5300 50  0001 L CNN "Description"
+F 5 "0.5" H 14650 5200 50  0001 L CNN "Height"
+F 6 "Susumu" H 14650 5100 50  0001 L CNN "Manufacturer_Name"
+F 7 "KRL6432E-C-R006-F-T1" H 14650 5000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 14650 4900 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 14650 4800 50  0001 L CNN "Arrow Price/Stock"
+F 10 "754-KRL6432ECR006FT1" H 14650 4700 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Susumu/KRL6432E-C-R006-F-T1/?qs=lc2O%252BfHJPVZeFQbLV4n%2Fcw%3D%3D" H 14650 4600 50  0001 L CNN "Mouser Price/Stock"
+	1    14100 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 5200 14100 5450
+Wire Wire Line
+	14800 5200 14800 5450
+Wire Wire Line
+	14800 5450 14800 5800
+Connection ~ 14800 5450
+Connection ~ 14800 5800
+Wire Wire Line
+	14100 5450 14100 5800
+Connection ~ 14100 5450
+Connection ~ 14100 5800
 $EndSCHEMATC
