@@ -1153,68 +1153,62 @@ $EndComp
 $Comp
 L Device:R_Small_US R22
 U 1 1 6047391A
-P 14350 1300
-F 0 "R22" H 14418 1346 50  0000 L CNN
-F 1 "604K" H 14418 1255 50  0000 L CNN
-F 2 "" H 14350 1300 50  0001 C CNN
-F 3 "~" H 14350 1300 50  0001 C CNN
-	1    14350 1300
+P 14450 2200
+F 0 "R22" H 14518 2246 50  0000 L CNN
+F 1 "604K" H 14518 2155 50  0000 L CNN
+F 2 "" H 14450 2200 50  0001 C CNN
+F 3 "~" H 14450 2200 50  0001 C CNN
+	1    14450 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R23
 U 1 1 6047585F
-P 14350 1700
-F 0 "R23" H 14418 1746 50  0000 L CNN
-F 1 "49.9K" H 14418 1655 50  0000 L CNN
-F 2 "" H 14350 1700 50  0001 C CNN
-F 3 "~" H 14350 1700 50  0001 C CNN
-	1    14350 1700
+P 14450 2600
+F 0 "R23" H 14518 2646 50  0000 L CNN
+F 1 "49.9K" H 14518 2555 50  0000 L CNN
+F 2 "" H 14450 2600 50  0001 C CNN
+F 3 "~" H 14450 2600 50  0001 C CNN
+	1    14450 2600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR024
 U 1 1 60475B18
-P 14350 1950
-F 0 "#PWR024" H 14350 1700 50  0001 C CNN
-F 1 "GND" H 14355 1777 50  0000 C CNN
-F 2 "" H 14350 1950 50  0001 C CNN
-F 3 "" H 14350 1950 50  0001 C CNN
-	1    14350 1950
+P 14450 2850
+F 0 "#PWR024" H 14450 2600 50  0001 C CNN
+F 1 "GND" H 14455 2677 50  0000 C CNN
+F 2 "" H 14450 2850 50  0001 C CNN
+F 3 "" H 14450 2850 50  0001 C CNN
+	1    14450 2850
 	1    0    0    -1  
 $EndComp
-Text Label 14450 1500 0    50   ~ 0
+Text Label 15150 2600 3    50   ~ 0
 U2FB
 Wire Wire Line
-	14050 1100 14350 1100
+	14450 2300 14450 2400
+Connection ~ 14450 2400
 Wire Wire Line
-	14350 1100 14350 1200
+	14450 2400 14450 2500
 Wire Wire Line
-	14350 1400 14350 1500
-Wire Wire Line
-	14450 1500 14350 1500
-Connection ~ 14350 1500
-Wire Wire Line
-	14350 1500 14350 1600
-Wire Wire Line
-	14350 1800 14350 1950
+	14450 2700 14450 2850
 $Comp
 L SamacSys_Parts:16SVF560M C55
 U 1 1 604B6BF7
-P 14750 1100
-F 0 "C55" V 14850 1100 50  0000 L CNN
-F 1 "16SVF560M" V 14650 1000 50  0000 L CNN
-F 2 "CAPAE830X1200N" H 15100 1150 50  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Capacitors%20PDFs/SVF_Series_DS.pdf" H 15100 1050 50  0001 L CNN
-F 4 "Aluminum Organic Polymer Capacitors 560uf 16volts 4.95A OS-CON Polymer" H 15100 950 50  0001 L CNN "Description"
-F 5 "12" H 15100 850 50  0001 L CNN "Height"
-F 6 "Panasonic" H 15100 750 50  0001 L CNN "Manufacturer_Name"
-F 7 "16SVF560M" H 15100 650 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "16SVF560M" H 15100 550 50  0001 L CNN "Arrow Part Number"
-F 9 "https://www.arrow.com/en/products/16svf560m/panasonic" H 15100 450 50  0001 L CNN "Arrow Price/Stock"
-F 10 "667-16SVF560M" H 15100 350 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Panasonic/16SVF560M/?qs=KTDjhDDUMAmQ85MU40IRZQ%3D%3D" H 15100 250 50  0001 L CNN "Mouser Price/Stock"
-	1    14750 1100
+P 14800 1100
+F 0 "C55" V 14900 1100 50  0000 L CNN
+F 1 "16SVF560M" V 14700 1000 50  0000 L CNN
+F 2 "CAPAE830X1200N" H 15150 1150 50  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Capacitors%20PDFs/SVF_Series_DS.pdf" H 15150 1050 50  0001 L CNN
+F 4 "Aluminum Organic Polymer Capacitors 560uf 16volts 4.95A OS-CON Polymer" H 15150 950 50  0001 L CNN "Description"
+F 5 "12" H 15150 850 50  0001 L CNN "Height"
+F 6 "Panasonic" H 15150 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "16SVF560M" H 15150 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "16SVF560M" H 15150 550 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/16svf560m/panasonic" H 15150 450 50  0001 L CNN "Arrow Price/Stock"
+F 10 "667-16SVF560M" H 15150 350 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Panasonic/16SVF560M/?qs=KTDjhDDUMAmQ85MU40IRZQ%3D%3D" H 15150 250 50  0001 L CNN "Mouser Price/Stock"
+	1    14800 1100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1237,12 +1231,10 @@ F 11 "https://www.mouser.co.uk/ProductDetail/Panasonic/16SVF560M/?qs=KTDjhDDUMAm
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	14350 1100 14750 1100
+	14800 1100 15000 1100
+Connection ~ 14800 1100
 Wire Wire Line
-	14750 1100 15000 1100
-Connection ~ 14750 1100
-Wire Wire Line
-	14750 1600 14850 1600
+	14800 1600 14850 1600
 $Comp
 L power:GND #PWR025
 U 1 1 604B70F5
@@ -1260,9 +1252,8 @@ Connection ~ 14850 1600
 Wire Wire Line
 	14850 1600 15000 1600
 Wire Wire Line
-	15000 1100 15300 1100
+	15000 1100 16050 1100
 Connection ~ 15000 1100
-Connection ~ 14350 1100
 Wire Wire Line
 	6150 2850 6550 2850
 Text Label 6150 2850 0    50   ~ 0
@@ -2646,51 +2637,40 @@ $EndComp
 $Comp
 L Device:R_Small_US R39
 U 1 1 5FDFD4AB
-P 15100 6250
-F 0 "R39" H 15168 6296 50  0000 L CNN
-F 1 "638K" H 15168 6205 50  0000 L CNN
-F 2 "" H 15100 6250 50  0001 C CNN
-F 3 "~" H 15100 6250 50  0001 C CNN
-	1    15100 6250
+P 15100 6700
+F 0 "R39" H 15168 6746 50  0000 L CNN
+F 1 "638K" H 15168 6655 50  0000 L CNN
+F 2 "" H 15100 6700 50  0001 C CNN
+F 3 "~" H 15100 6700 50  0001 C CNN
+	1    15100 6700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R40
 U 1 1 5FDFD4B5
-P 15100 6650
-F 0 "R40" H 15168 6696 50  0000 L CNN
-F 1 "49.9K" H 15168 6605 50  0000 L CNN
-F 2 "" H 15100 6650 50  0001 C CNN
-F 3 "~" H 15100 6650 50  0001 C CNN
-	1    15100 6650
+P 15100 7100
+F 0 "R40" H 15168 7146 50  0000 L CNN
+F 1 "49.9K" H 15168 7055 50  0000 L CNN
+F 2 "" H 15100 7100 50  0001 C CNN
+F 3 "~" H 15100 7100 50  0001 C CNN
+	1    15100 7100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR041
 U 1 1 5FDFD4BF
-P 15100 6900
-F 0 "#PWR041" H 15100 6650 50  0001 C CNN
-F 1 "GND" H 15105 6727 50  0000 C CNN
-F 2 "" H 15100 6900 50  0001 C CNN
-F 3 "" H 15100 6900 50  0001 C CNN
-	1    15100 6900
+P 15100 7350
+F 0 "#PWR041" H 15100 7100 50  0001 C CNN
+F 1 "GND" H 15105 7177 50  0000 C CNN
+F 2 "" H 15100 7350 50  0001 C CNN
+F 3 "" H 15100 7350 50  0001 C CNN
+	1    15100 7350
 	1    0    0    -1  
 $EndComp
-Text Label 15200 6450 0    50   ~ 0
+Text Label 15800 7150 3    50   ~ 0
 U1FB
 Wire Wire Line
-	14800 6050 15100 6050
-Wire Wire Line
-	15100 6050 15100 6150
-Wire Wire Line
-	15100 6350 15100 6450
-Wire Wire Line
-	15200 6450 15100 6450
-Connection ~ 15100 6450
-Wire Wire Line
-	15100 6450 15100 6550
-Wire Wire Line
-	15100 6750 15100 6900
+	15100 7200 15100 7350
 Wire Wire Line
 	6250 7800 6650 7800
 Text Label 6250 7800 0    50   ~ 0
@@ -3187,11 +3167,11 @@ Wire Wire Line
 	9850 8700 15950 8700
 Text Label 8400 7700 0    50   ~ 0
 U3OUT1
-Text HLabel 15850 8150 2    50   Input ~ 0
+Text HLabel 15900 4450 2    50   Input ~ 0
 RUNSTOP
-Text Label 14800 7650 2    50   ~ 0
+Text Label 14850 3950 2    50   ~ 0
 U1ENUVLO
-Text Label 14800 7900 2    50   ~ 0
+Text Label 14850 4200 2    50   ~ 0
 U2ENUVLO
 Wire Wire Line
 	3450 1300 3750 1300
@@ -3225,11 +3205,8 @@ Wire Wire Line
 Wire Wire Line
 	6650 9100 6650 8800
 Connection ~ 6650 8800
-Text HLabel 15900 6050 2    50   Output ~ 0
+Text HLabel 16050 6050 2    50   Output ~ 0
 VREG
-Wire Wire Line
-	15100 6050 15700 6050
-Connection ~ 15100 6050
 Text Notes 15700 6300 0    50   ~ 0
 13.8V (ADJ.)\n50A
 $Comp
@@ -3262,7 +3239,7 @@ Wire Wire Line
 	15700 5500 15700 6050
 Connection ~ 15700 6050
 Wire Wire Line
-	15700 6050 15900 6050
+	15700 6050 16050 6050
 Wire Wire Line
 	1200 4900 1200 4950
 $Comp
@@ -3276,12 +3253,12 @@ F 3 "" H 1200 4950 50  0001 C CNN
 	1    1200 4950
 	1    0    0    -1  
 $EndComp
-Text Label 15750 7550 2    50   ~ 0
+Text Label 15800 3850 2    50   ~ 0
 U1ISMON
-Text HLabel 15950 7550 2    50   Output ~ 0
+Text HLabel 16000 3850 2    50   Output ~ 0
 ISMON
 Wire Wire Line
-	15750 7550 15950 7550
+	15800 3850 16000 3850
 Text Notes 9450 3400 1    50   ~ 0
 150kHz
 Text Notes 9550 8350 1    50   ~ 0
@@ -3289,52 +3266,52 @@ Text Notes 9550 8350 1    50   ~ 0
 $Comp
 L SamacSys_Parts:BSS138L Q?
 U 1 1 602C5287
-P 15750 8150
-F 0 "Q?" H 16179 8296 50  0000 L CNN
-F 1 "BSS138L" H 16179 8205 50  0000 L CNN
-F 2 "SOT96P237X111-3N" H 16200 8100 50  0001 L CNN
-F 3 "https://www.onsemi.com/products/discretes-drivers/mosfets/bss138l" H 16200 8000 50  0001 L CNN
-F 4 "ON SEMICONDUCTOR/FAIRCHILD - BSS138L - MOSFET, N-CHANNEL, 50V, 0.2A, SOT-23-3" H 16200 7900 50  0001 L CNN "Description"
-F 5 "1.11" H 16200 7800 50  0001 L CNN "Height"
-F 6 "ON Semiconductor" H 16200 7700 50  0001 L CNN "Manufacturer_Name"
-F 7 "BSS138L" H 16200 7600 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "BSS138L" H 16200 7500 50  0001 L CNN "Arrow Part Number"
-F 9 "https://www.arrow.com/en/products/bss138l/on-semiconductor" H 16200 7400 50  0001 L CNN "Arrow Price/Stock"
-F 10 "512-BSS138L" H 16200 7300 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/BSS138L/?qs=C8E66ftkQtxfAHmiWaRE%252Bg%3D%3D" H 16200 7200 50  0001 L CNN "Mouser Price/Stock"
-	1    15750 8150
+P 15800 4450
+F 0 "Q?" H 16229 4596 50  0000 L CNN
+F 1 "BSS138L" H 16229 4505 50  0000 L CNN
+F 2 "SOT96P237X111-3N" H 16250 4400 50  0001 L CNN
+F 3 "https://www.onsemi.com/products/discretes-drivers/mosfets/bss138l" H 16250 4300 50  0001 L CNN
+F 4 "ON SEMICONDUCTOR/FAIRCHILD - BSS138L - MOSFET, N-CHANNEL, 50V, 0.2A, SOT-23-3" H 16250 4200 50  0001 L CNN "Description"
+F 5 "1.11" H 16250 4100 50  0001 L CNN "Height"
+F 6 "ON Semiconductor" H 16250 4000 50  0001 L CNN "Manufacturer_Name"
+F 7 "BSS138L" H 16250 3900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "BSS138L" H 16250 3800 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/bss138l/on-semiconductor" H 16250 3700 50  0001 L CNN "Arrow Price/Stock"
+F 10 "512-BSS138L" H 16250 3600 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/BSS138L/?qs=C8E66ftkQtxfAHmiWaRE%252Bg%3D%3D" H 16250 3500 50  0001 L CNN "Mouser Price/Stock"
+	1    15800 4450
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	14800 7650 14800 7750
+	14850 3950 14850 4050
 Wire Wire Line
-	15450 7750 14800 7750
-Connection ~ 14800 7750
+	15500 4050 14850 4050
+Connection ~ 14850 4050
 Wire Wire Line
-	14800 7750 14800 7900
+	14850 4050 14850 4200
 $Comp
 L power:GND #PWR?
 U 1 1 603D8582
-P 15450 8400
-F 0 "#PWR?" H 15450 8150 50  0001 C CNN
-F 1 "GND" H 15455 8227 50  0000 C CNN
-F 2 "" H 15450 8400 50  0001 C CNN
-F 3 "" H 15450 8400 50  0001 C CNN
-	1    15450 8400
+P 15500 4700
+F 0 "#PWR?" H 15500 4450 50  0001 C CNN
+F 1 "GND" H 15505 4527 50  0000 C CNN
+F 2 "" H 15500 4700 50  0001 C CNN
+F 3 "" H 15500 4700 50  0001 C CNN
+	1    15500 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15750 8150 15850 8150
+	15800 4450 15900 4450
 Wire Wire Line
-	15450 8350 15450 8400
-Text Notes 16250 8350 2    50   ~ 0
+	15500 4650 15500 4700
+Text Notes 16300 4650 2    50   ~ 0
 +3V3 to\ndisable regulator
 Wire Wire Line
 	13600 3100 13600 6050
 Wire Wire Line
-	15300 1100 15300 3100
+	16050 1100 16050 3100
 Wire Wire Line
-	15300 3100 13600 3100
+	16050 3100 13600 3100
 $Comp
 L SamacSys_Parts:KRL6432E-C-R006-F-T1 R?
 U 1 1 5FFA054E
@@ -3385,4 +3362,99 @@ Wire Wire Line
 	14100 5450 14100 5800
 Connection ~ 14100 5450
 Connection ~ 14100 5800
+Wire Wire Line
+	14050 1100 14450 1100
+$Comp
+L Jumper:Jumper_2_Open JP?
+U 1 1 5FEF3A0A
+P 14450 1350
+F 0 "JP?" V 14404 1448 50  0000 L CNN
+F 1 "Jumper_2_Open" V 14495 1448 50  0000 L CNN
+F 2 "" H 14450 1350 50  0001 C CNN
+F 3 "~" H 14450 1350 50  0001 C CNN
+	1    14450 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14450 1150 14450 1100
+Connection ~ 14450 1100
+Wire Wire Line
+	14450 1100 14800 1100
+Wire Wire Line
+	14450 1550 14450 2100
+$Comp
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 600DB7E1
+P 15150 2400
+F 0 "JP?" H 15150 2604 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 15150 2513 50  0000 C CNN
+F 2 "" H 15150 2400 50  0001 C CNN
+F 3 "~" H 15150 2400 50  0001 C CNN
+	1    15150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 2400 14900 2400
+Wire Wire Line
+	15150 2550 15150 2600
+Text Label 15550 2400 0    50   ~ 0
+VCTL2
+Wire Wire Line
+	15400 2400 15550 2400
+$Comp
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 60282FDC
+P 15800 6900
+F 0 "JP?" H 15800 7104 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 15800 7013 50  0000 C CNN
+F 2 "" H 15800 6900 50  0001 C CNN
+F 3 "~" H 15800 6900 50  0001 C CNN
+	1    15800 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15800 7050 15800 7100
+Text Label 16200 6900 0    50   ~ 0
+VCTL1
+Wire Wire Line
+	16050 6900 16200 6900
+Wire Wire Line
+	15100 6800 15100 6900
+Wire Wire Line
+	15550 6900 15100 6900
+Connection ~ 15100 6900
+Wire Wire Line
+	15100 6900 15100 7000
+Text Label 15750 3550 2    50   ~ 0
+VCTL1
+Text Label 15750 3700 2    50   ~ 0
+VCTL2
+Text HLabel 16000 3550 2    50   Input ~ 0
+VCTL1
+Text HLabel 16000 3700 2    50   Input ~ 0
+VCTL2
+Wire Wire Line
+	15750 3550 16000 3550
+Wire Wire Line
+	15750 3700 16000 3700
+Wire Wire Line
+	14800 6050 15100 6050
+$Comp
+L Jumper:Jumper_2_Open JP?
+U 1 1 6054454E
+P 15100 6300
+F 0 "JP?" V 15054 6398 50  0000 L CNN
+F 1 "Jumper_2_Open" V 15145 6398 50  0000 L CNN
+F 2 "" H 15100 6300 50  0001 C CNN
+F 3 "~" H 15100 6300 50  0001 C CNN
+	1    15100 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15100 6100 15100 6050
+Connection ~ 15100 6050
+Wire Wire Line
+	15100 6050 15700 6050
+Wire Wire Line
+	15100 6500 15100 6600
 $EndSCHEMATC
