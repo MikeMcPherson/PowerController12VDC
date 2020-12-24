@@ -1,4 +1,5 @@
 # PowerController12VDC
+## This is a work in progress, not yet fully designed or tested...
 This project attempts to apply the latest power management, microcontroller, and IoT technologies to create a state-of-the-art, remotely-manageable power distribution device for amateur radio.
 ## Features
 - Anderson Powerpole input
