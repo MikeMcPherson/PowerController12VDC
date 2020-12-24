@@ -1,0 +1,574 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLedger 17000 11000
+encoding utf-8
+Sheet 2 6
+Title "KQ9P Power Controller 12VDC"
+Date "2020-12-08"
+Rev "V1"
+Comp "KQ9P"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ERJ-3RSFR10V:ERJ-3RSFR10V R?
+U 1 1 5FD35C4F
+P 4050 5250
+AR Path="/5FD35C4F" Ref="R?"  Part="1" 
+AR Path="/5FD25DF9/5FD35C4F" Ref="R1"  Part="1" 
+F 0 "R1" V 4004 5355 50  0000 L CNN
+F 1 "ERJ-3RSFR10V" V 4095 5355 50  0000 L CNN
+F 2 "RESC1608X55N" H 4050 5250 50  0001 L BNN
+F 3 "" H 4050 5250 50  0001 L BNN
+	1    4050 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 4600 4050 4600
+Wire Wire Line
+	4050 4850 4050 4600
+Connection ~ 4050 4600
+Wire Wire Line
+	4050 4600 4850 4600
+Wire Wire Line
+	2400 6400 2750 6400
+Wire Wire Line
+	2750 4600 2750 5400
+Wire Wire Line
+	2750 5700 2750 6400
+Connection ~ 2750 6400
+Wire Wire Line
+	2750 6400 4050 6400
+Wire Wire Line
+	4050 5650 4050 5800
+Wire Wire Line
+	4050 6300 4050 6400
+Connection ~ 4050 6400
+Wire Wire Line
+	4050 6400 4850 6400
+Wire Wire Line
+	4850 5300 4850 4600
+Wire Wire Line
+	4850 5800 4850 6400
+Connection ~ 4850 6400
+$Comp
+L CRCW040210K0FKED:CRCW040210K0FKED R?
+U 1 1 5FD35C85
+P 8150 4700
+AR Path="/5FD35C85" Ref="R?"  Part="1" 
+AR Path="/5FD25DF9/5FD35C85" Ref="R2"  Part="1" 
+F 0 "R2" V 8454 4788 50  0000 L CNN
+F 1 "CRCW040210K0FKED" V 8545 4788 50  0000 L CNN
+F 2 "RESC1005X40N" H 8700 4750 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 8700 4650 50  0001 L CNN
+F 4 "CRCW0402 Resistor T/R 0.063W,1%,10K Vishay CRCW Series Thick Film Surface Mount Resistor 0402 Case 10k +/-1% 0.063W +/-100ppm/C" H 8700 4550 50  0001 L CNN "Description"
+F 5 "0.4" H 8700 4450 50  0001 L CNN "Height"
+F 6 "Vishay" H 8700 4350 50  0001 L CNN "Manufacturer_Name"
+F 7 "CRCW040210K0FKED" H 8700 4250 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "CRCW040210K0FKED" H 8700 4150 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/crcw040210k0fked/vishay" H 8700 4050 50  0001 L CNN "Arrow Price/Stock"
+F 10 "71-CRCW0402-10K-E3" H 8700 3950 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Vishay-Dale/CRCW040210K0FKED?qs=rlE3Te1NifyN3e8vvxacSw%3D%3D" H 8700 3850 50  0001 L CNN "Mouser Price/Stock"
+	1    8150 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 6300 8150 6400
+Connection ~ 8150 6400
+Wire Wire Line
+	8150 6400 9350 6400
+Wire Wire Line
+	9350 5750 9350 6400
+Wire Wire Line
+	9350 5250 9350 4600
+Connection ~ 9350 4600
+Connection ~ 9350 6400
+Text Label 8800 6400 0    50   ~ 0
+GND
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5FE1E454
+P 1850 5500
+F 0 "J1" H 1768 5175 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1768 5266 50  0000 C CNN
+F 2 "" H 1850 5500 50  0001 C CNN
+F 3 "~" H 1850 5500 50  0001 C CNN
+	1    1850 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 5400 2400 5400
+Wire Wire Line
+	2400 5400 2400 4600
+Wire Wire Line
+	2050 5500 2400 5500
+Wire Wire Line
+	2400 5500 2400 6400
+$Comp
+L power:GND #PWR05
+U 1 1 5FE21883
+P 9800 6400
+F 0 "#PWR05" H 9800 6150 50  0001 C CNN
+F 1 "GND" H 9805 6227 50  0000 C CNN
+F 2 "" H 9800 6400 50  0001 C CNN
+F 3 "" H 9800 6400 50  0001 C CNN
+	1    9800 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 4600 9750 4600
+Wire Wire Line
+	9800 6400 9350 6400
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5FE25169
+P 9350 6400
+F 0 "#FLG02" H 9350 6475 50  0001 C CNN
+F 1 "PWR_FLAG" H 9350 6573 50  0000 C CNN
+F 2 "" H 9350 6400 50  0001 C CNN
+F 3 "~" H 9350 6400 50  0001 C CNN
+	1    9350 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 6400 5900 6400
+NoConn ~ 6000 4900
+NoConn ~ 6000 5000
+Wire Wire Line
+	4850 4600 5400 4600
+Wire Wire Line
+	5400 4600 5400 4500
+Wire Wire Line
+	5400 4500 6000 4500
+Connection ~ 4850 4600
+Wire Wire Line
+	5400 4600 5400 5400
+Wire Wire Line
+	5400 5400 5600 5400
+Connection ~ 5400 4600
+Wire Wire Line
+	6000 5500 5750 5500
+Wire Wire Line
+	5750 5500 5750 5400
+Connection ~ 5750 5400
+Wire Wire Line
+	5750 5400 6000 5400
+Wire Wire Line
+	6000 5700 5900 5700
+Wire Wire Line
+	5900 5700 5900 5800
+Connection ~ 5900 6400
+Wire Wire Line
+	6000 5800 5900 5800
+Connection ~ 5900 5800
+$Comp
+L NLCV32T-R33M-PFR:NLCV32T-R33M-PFR L1
+U 1 1 5FD58B5C
+P 3350 4600
+F 0 "L1" H 3350 4781 50  0000 C CNN
+F 1 "NLCV32T-R33M-EFR" H 3350 4690 50  0000 C CNN
+F 2 "IND_NLCV32T-R33M-PFR" H 3350 4600 50  0001 L BNN
+F 3 "" H 3350 4600 50  0001 L BNN
+F 4 "TDK" H 3350 4600 50  0001 L BNN "MANUFACTURER"
+F 5 "Manufacturer Recommendation" H 3350 4600 50  0001 L BNN "STANDARD"
+	1    3350 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4600 2850 4600
+Connection ~ 2750 4600
+$Comp
+L GRM21BC71E475KE11L:GRM21BC71E475KE11L C1
+U 1 1 5FD5F0DB
+P 2750 5500
+F 0 "C1" V 2754 5603 50  0000 L CNN
+F 1 "GRM21BC71E475KE11L" V 2845 5603 50  0000 L CNN
+F 2 "CAPC2012X145N" H 2750 5500 50  0001 L BNN
+F 3 "" H 2750 5500 50  0001 L BNN
+	1    2750 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L 25SVPF27MX:25SVPF27MX C2
+U 1 1 5FD63B9B
+P 4050 5800
+F 0 "C2" V 4254 5930 50  0000 L CNN
+F 1 "25SVPF27MX" V 4345 5930 50  0000 L CNN
+F 2 "CAPAE530X600N" H 4400 5850 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AAB8000C177-947360.pdf" H 4400 5750 50  0001 L CNN
+F 4 "Panasonic 27uF 25V dc Aluminium Polymer Capacitor, Surface Mount 5 Dia. x 5.9mm +105C 5mm" H 4400 5650 50  0001 L CNN "Description"
+F 5 "6" H 4400 5550 50  0001 L CNN "Height"
+F 6 "Panasonic" H 4400 5450 50  0001 L CNN "Manufacturer_Name"
+F 7 "25SVPF27MX" H 4400 5350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "25SVPF27MX" H 4400 5250 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/25svpf27mx/panasonic" H 4400 5150 50  0001 L CNN "Arrow Price/Stock"
+F 10 "667-25SVPF27MX" H 4400 5050 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Panasonic/25SVPF27MX?qs=OE1iw1LrrPHs7V8AgrsYgQ%3D%3D" H 4400 4950 50  0001 L CNN "Mouser Price/Stock"
+	1    4050 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L C3216X5R1H106K160AB:C3216X5R1H106K160AB C3
+U 1 1 5FD6890A
+P 4850 5300
+F 0 "C3" V 5054 5428 50  0000 L CNN
+F 1 "C3216X5R1H106K160AB" V 5145 5428 50  0000 L CNN
+F 2 "CAPC3216X180N" H 5200 5350 50  0001 L CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 5200 5250 50  0001 L CNN
+F 4 "1206 X5R ceramic capacitor 10uF 50V TDK 1206 C 10F Ceramic Multilayer Capacitor, 50 V dc X5R Dielectric +/-10% SMD" H 5200 5150 50  0001 L CNN "Description"
+F 5 "1.8" H 5200 5050 50  0001 L CNN "Height"
+F 6 "TDK" H 5200 4950 50  0001 L CNN "Manufacturer_Name"
+F 7 "C3216X5R1H106K160AB" H 5200 4850 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "C3216X5R1H106K160AB" H 5200 4750 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/c3216x5r1h106k160ab/tdk" H 5200 4650 50  0001 L CNN "Arrow Price/Stock"
+F 10 "810-C3216X5R1H106K" H 5200 4550 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/TDK/C3216X5R1H106K160AB?qs=NRhsANhppD%252BLHMbxvQzsEQ%3D%3D" H 5200 4450 50  0001 L CNN "Mouser Price/Stock"
+	1    4850 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 5FD6C7BF
+P 6800 3650
+F 0 "R3" V 6595 3650 50  0000 C CNN
+F 1 "100k" V 6686 3650 50  0000 C CNN
+F 2 "" H 6800 3650 50  0001 C CNN
+F 3 "~" H 6800 3650 50  0001 C CNN
+	1    6800 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 4500 7600 3650
+Wire Wire Line
+	7600 3650 6900 3650
+Wire Wire Line
+	6000 5200 5800 5200
+Wire Wire Line
+	5800 5200 5800 3650
+Wire Wire Line
+	5800 3650 6700 3650
+$Comp
+L power:+5V #PWR04
+U 1 1 5FD70C39
+P 9750 4600
+F 0 "#PWR04" H 9750 4450 50  0001 C CNN
+F 1 "+5V" H 9765 4773 50  0000 C CNN
+F 2 "" H 9750 4600 50  0001 C CNN
+F 3 "" H 9750 4600 50  0001 C CNN
+	1    9750 4600
+	1    0    0    -1  
+$EndComp
+Text Label 8700 4600 0    50   ~ 0
++5V
+$Comp
+L CRCW04022K49FKED:CRCW04022K49FKED R4
+U 1 1 5FD73AFF
+P 8150 5600
+F 0 "R4" V 8454 5688 50  0000 L CNN
+F 1 "CRCW04022K49FKED" V 8545 5688 50  0000 L CNN
+F 2 "RESC1005X40N" H 8700 5650 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 8700 5550 50  0001 L CNN
+F 4 "Vishay CRCW Series Thick Film Surface Mount Resistor 0402 Case 2.49k +/-1% 0.063W +/-100ppm/C" H 8700 5450 50  0001 L CNN "Description"
+F 5 "0.4" H 8700 5350 50  0001 L CNN "Height"
+F 6 "Vishay" H 8700 5250 50  0001 L CNN "Manufacturer_Name"
+F 7 "CRCW04022K49FKED" H 8700 5150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "CRCW04022K49FKED" H 8700 5050 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/crcw04022k49fked/vishay" H 8700 4950 50  0001 L CNN "Arrow Price/Stock"
+F 10 "71-CRCW0402-2.49K-E3" H 8700 4850 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=71-CRCW0402-2.49K-E3" H 8700 4750 50  0001 L CNN "Mouser Price/Stock"
+	1    8150 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L GRM32EC81C476KE15L:GRM32EC81C476KE15L C4
+U 1 1 5FD79652
+P 9350 5250
+F 0 "C4" V 9554 5378 50  0000 L CNN
+F 1 "GRM32EC81C476KE15L" V 9645 5378 50  0000 L CNN
+F 2 "CAPC3225X270N" H 9700 5300 50  0001 L CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM32ER71E226KE15%23.pdf" H 9700 5200 50  0001 L CNN
+F 4 "Murata 1210 GRM 47uF Ceramic Multilayer Capacitor, 16 V dc, +105C, X6S Dielectric, +/-10% SMD" H 9700 5100 50  0001 L CNN "Description"
+F 5 "2.7" H 9700 5000 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 9700 4900 50  0001 L CNN "Manufacturer_Name"
+F 7 "GRM32EC81C476KE15L" H 9700 4800 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "GRM32EC81C476KE15L" H 9700 4700 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/grm32ec81c476ke15l/murata-manufacturing" H 9700 4600 50  0001 L CNN "Arrow Price/Stock"
+F 10 "81-GRM32EC81C476KE5L" H 9700 4500 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM32EC81C476KE15L?qs=eeBpzGFlv%252B%2F0ttt4zOip7g%3D%3D" H 9700 4400 50  0001 L CNN "Mouser Price/Stock"
+	1    9350 5250
+	0    1    1    0   
+$EndComp
+NoConn ~ 12500 5200
+Wire Wire Line
+	9750 4600 10400 4600
+Wire Wire Line
+	11250 4600 11250 5350
+Wire Wire Line
+	11250 5350 11750 5350
+Connection ~ 9750 4600
+Wire Wire Line
+	11250 4600 13100 4600
+Wire Wire Line
+	13100 4600 13100 5350
+Connection ~ 11250 4600
+Connection ~ 9800 6400
+$Comp
+L LD39100PU33R:LD39100PU33R IC5
+U 1 1 5FD90561
+P 11750 5350
+F 0 "IC5" H 12350 5615 50  0000 C CNN
+F 1 "LD39100PU33R" H 12350 5524 50  0000 C CNN
+F 2 "SON95P300X300X100-7N-D" H 12800 5450 50  0001 L CNN
+F 3 "https://www.st.com/resource/en/datasheet/ld39100.pdf" H 12800 5350 50  0001 L CNN
+F 4 "STMICROELECTRONICS - LD39100PU33R - LDO, FIXED, 3.3V, 1A, DFN-6" H 12800 5250 50  0001 L CNN "Description"
+F 5 "1" H 12800 5150 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 12800 5050 50  0001 L CNN "Manufacturer_Name"
+F 7 "LD39100PU33R" H 12800 4950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "LD39100PU33R" H 12800 4850 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/ld39100pu33r/stmicroelectronics" H 12800 4750 50  0001 L CNN "Arrow Price/Stock"
+F 10 "511-LD39100PU33R" H 12800 4650 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LD39100PU33R?qs=aVyJF2WnouTD6fxDejv2Aw%3D%3D" H 12800 4550 50  0001 L CNN "Mouser Price/Stock"
+	1    11750 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 5350 12950 5350
+Wire Wire Line
+	12350 6050 12350 6400
+Connection ~ 12350 6400
+Wire Wire Line
+	9800 6400 10400 6400
+NoConn ~ 12950 5450
+NoConn ~ 11750 5550
+Wire Wire Line
+	11750 5450 11600 5450
+Wire Wire Line
+	11600 5450 11600 6400
+Connection ~ 11600 6400
+Wire Wire Line
+	11600 6400 12350 6400
+Wire Wire Line
+	12950 5550 13050 5550
+$Comp
+L Device:C C5
+U 1 1 5FDBBE02
+P 10800 5500
+F 0 "C5" H 10915 5546 50  0000 L CNN
+F 1 "1uF_X5R" H 10915 5455 50  0000 L CNN
+F 2 "" H 10838 5350 50  0001 C CNN
+F 3 "~" H 10800 5500 50  0001 C CNN
+	1    10800 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 5350 10800 4600
+Connection ~ 10800 4600
+Wire Wire Line
+	10800 4600 11250 4600
+Wire Wire Line
+	10800 5650 10800 6400
+Connection ~ 10800 6400
+Wire Wire Line
+	10800 6400 11250 6400
+$Comp
+L Device:C C26
+U 1 1 5FDBF278
+P 11250 5850
+F 0 "C26" H 11365 5896 50  0000 L CNN
+F 1 "100nF" H 11365 5805 50  0000 L CNN
+F 2 "" H 11288 5700 50  0001 C CNN
+F 3 "~" H 11250 5850 50  0001 C CNN
+	1    11250 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11250 5350 11250 5700
+Connection ~ 11250 5350
+Wire Wire Line
+	11250 6000 11250 6400
+Connection ~ 11250 6400
+Wire Wire Line
+	11250 6400 11600 6400
+$Comp
+L Device:C C27
+U 1 1 5FDC33AB
+P 13050 6000
+F 0 "C27" H 13165 6046 50  0000 L CNN
+F 1 "1uF_X5R" H 13165 5955 50  0000 L CNN
+F 2 "" H 13088 5850 50  0001 C CNN
+F 3 "~" H 13050 6000 50  0001 C CNN
+	1    13050 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13050 5550 13050 5850
+Wire Wire Line
+	13250 4600 13650 4600
+$Comp
+L power:GND #PWR07
+U 1 1 5FDC93FF
+P 14550 6400
+F 0 "#PWR07" H 14550 6150 50  0001 C CNN
+F 1 "GND" H 14555 6227 50  0000 C CNN
+F 2 "" H 14550 6400 50  0001 C CNN
+F 3 "" H 14550 6400 50  0001 C CNN
+	1    14550 6400
+	1    0    0    -1  
+$EndComp
+Text Label 13800 4600 0    50   ~ 0
++3V3
+$Comp
+L power:VDD #PWR06
+U 1 1 5FDCBC0A
+P 14550 4600
+F 0 "#PWR06" H 14550 4450 50  0001 C CNN
+F 1 "VDD" H 14565 4773 50  0000 C CNN
+F 2 "" H 14550 4600 50  0001 C CNN
+F 3 "" H 14550 4600 50  0001 C CNN
+	1    14550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C28
+U 1 1 5FDCC862
+P 13650 5500
+F 0 "C28" H 13765 5546 50  0000 L CNN
+F 1 "100nF" H 13765 5455 50  0000 L CNN
+F 2 "" H 13688 5350 50  0001 C CNN
+F 3 "~" H 13650 5500 50  0001 C CNN
+	1    13650 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 5350 13650 4600
+Connection ~ 13650 4600
+Wire Wire Line
+	13650 5650 13650 6400
+Connection ~ 13650 6400
+Wire Wire Line
+	13650 6400 14550 6400
+$Comp
+L Device:LED D1
+U 1 1 5FDD7BC6
+P 10400 5250
+F 0 "D1" V 10439 5330 50  0000 L CNN
+F 1 "LED GREEN" V 10348 5330 50  0000 L CNN
+F 2 "" H 10400 5250 50  0001 C CNN
+F 3 "~" H 10400 5250 50  0001 C CNN
+	1    10400 5250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R10
+U 1 1 5FDDD85D
+P 10400 4850
+F 0 "R10" H 10468 4896 50  0000 L CNN
+F 1 "1K" H 10468 4805 50  0000 L CNN
+F 2 "" H 10400 4850 50  0001 C CNN
+F 3 "~" H 10400 4850 50  0001 C CNN
+	1    10400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 4750 10400 4600
+Connection ~ 10400 4600
+Wire Wire Line
+	10400 4600 10800 4600
+Wire Wire Line
+	10400 4950 10400 5100
+Wire Wire Line
+	10400 5400 10400 6400
+Connection ~ 10400 6400
+Wire Wire Line
+	10400 6400 10800 6400
+Wire Wire Line
+	12350 6400 13050 6400
+Wire Wire Line
+	13250 4600 13250 5550
+Wire Wire Line
+	13250 5550 13050 5550
+Connection ~ 13050 5550
+Wire Wire Line
+	13050 6150 13050 6400
+Connection ~ 13050 6400
+Wire Wire Line
+	13050 6400 13650 6400
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 60034A7C
+P 5600 5400
+F 0 "#FLG0103" H 5600 5475 50  0001 C CNN
+F 1 "PWR_FLAG" H 5600 5573 50  0000 C CNN
+F 2 "" H 5600 5400 50  0001 C CNN
+F 3 "~" H 5600 5400 50  0001 C CNN
+	1    5600 5400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 5400
+Wire Wire Line
+	5600 5400 5750 5400
+Wire Wire Line
+	2400 4600 2750 4600
+Wire Wire Line
+	5900 6400 7700 6400
+$Comp
+L 2020-12-12_03-26-08:TPSM53604RDAR IC4
+U 1 1 5FD45ECC
+P 6000 4500
+F 0 "IC4" H 6800 4887 60  0000 C CNN
+F 1 "TPSM53604RDAR" H 6800 4781 60  0000 C CNN
+F 2 "B3QFN14_RDA_TEX" H 6800 4740 60  0001 C CNN
+F 3 "" H 6000 4500 60  0000 C CNN
+	1    6000 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5800 5900 6400
+Wire Wire Line
+	8150 5500 8150 5600
+Wire Wire Line
+	8150 5400 8150 5500
+Connection ~ 8150 5500
+Wire Wire Line
+	8050 5500 8150 5500
+Text Label 6000 4600 2    50   ~ 0
+IC4FB
+Text Label 8050 5500 2    50   ~ 0
+IC4FB
+Wire Wire Line
+	7600 4600 7700 4600
+Wire Wire Line
+	8150 4700 8150 4600
+Connection ~ 8150 4600
+Wire Wire Line
+	8150 4600 9350 4600
+Wire Wire Line
+	13650 4600 14550 4600
+Wire Wire Line
+	7600 4700 7700 4700
+Wire Wire Line
+	7700 4700 7700 4600
+Connection ~ 7700 4600
+Wire Wire Line
+	7700 4600 8150 4600
+Wire Wire Line
+	7600 5100 7700 5100
+Wire Wire Line
+	7700 5100 7700 5200
+Wire Wire Line
+	7700 5200 7600 5200
+Wire Wire Line
+	7700 5200 7700 5300
+Wire Wire Line
+	7700 5300 7600 5300
+Connection ~ 7700 5200
+Wire Wire Line
+	7700 5300 7700 6400
+Connection ~ 7700 5300
+Connection ~ 7700 6400
+Wire Wire Line
+	7700 6400 8150 6400
+$EndSCHEMATC
