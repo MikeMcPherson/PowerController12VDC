@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 3 7
+Sheet 3 6
 Title "KQ9P Power Controller 12VDC"
 Date "2020-12-08"
 Rev "V1"
@@ -665,7 +665,7 @@ Wire Wire Line
 Connection ~ 4900 4200
 Wire Wire Line
 	7100 5000 7100 4550
-Text GLabel 7600 4650 0    50   BiDi ~ 0
+Text GLabel 7550 4650 0    50   BiDi ~ 0
 VREF+
 Text GLabel 9100 3750 2    50   BiDi ~ 0
 VREF+
@@ -712,8 +712,8 @@ L MCU_ST_STM32F4:STM32F439VITx U?
 U 1 1 5FDCA4A8
 P 8500 6450
 AR Path="/5FDCA4A8" Ref="U?"  Part="1" 
-AR Path="/5FD83A3B/5FDCA4A8" Ref="IC3"  Part="1" 
-F 0 "IC3" H 8500 6500 50  0000 C CNN
+AR Path="/5FD83A3B/5FDCA4A8" Ref="IC1"  Part="1" 
+F 0 "IC1" H 8500 6500 50  0000 C CNN
 F 1 "STM32F439VITx" H 8500 6400 50  0000 C CNN
 F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 7800 3850 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00077036.pdf" H 8500 6450 50  0001 C CNN
@@ -723,7 +723,7 @@ $EndComp
 Wire Wire Line
 	7100 5000 6700 5000
 Wire Wire Line
-	7100 4550 7600 4550
+	7100 4550 7200 4550
 NoConn ~ 9400 5750
 NoConn ~ 9400 5850
 NoConn ~ 9400 5950
@@ -849,11 +849,9 @@ Wire Wire Line
 	9500 1650 9500 1700
 Connection ~ 9500 1700
 Wire Wire Line
-	7600 4450 7000 4450
+	7600 4450 7450 4450
 Wire Wire Line
 	7000 4450 7000 4600
-Wire Wire Line
-	7000 4600 6700 4600
 $Comp
 L power:VDD #PWR?
 U 1 1 5FDCA51B
@@ -900,26 +898,239 @@ F 3 "" H 7750 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7750 3650 7750 3750
-Text HLabel 9550 5350 2    50   Output ~ 0
-TMS
-Text HLabel 9550 5450 2    50   Output ~ 0
-TCK
-Text HLabel 9550 5550 2    50   Output ~ 0
-TDI
-Text HLabel 9550 6050 2    50   Output ~ 0
-TDO
-Wire Wire Line
-	9400 5350 9550 5350
-Wire Wire Line
-	9400 5450 9550 5450
-Wire Wire Line
-	9400 5550 9550 5550
-Wire Wire Line
-	9400 6050 9550 6050
-Text HLabel 7500 3850 0    50   Output ~ 0
-NRST
 Wire Wire Line
 	7500 3850 7600 3850
 NoConn ~ 9400 5150
 NoConn ~ 9400 5250
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J?
+U 1 1 5FF93E44
+P 12150 5750
+AR Path="/5FD151ED/5FF93E44" Ref="J?"  Part="1" 
+AR Path="/5FD83A3B/5FF93E44" Ref="J3"  Part="1" 
+F 0 "J3" H 11707 5796 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 11707 5705 50  0000 R CNN
+F 2 "" H 12150 5750 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 11800 4500 50  0001 C CNN
+	1    12150 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF93E4A
+P 12150 5150
+AR Path="/5FD151ED/5FF93E4A" Ref="#PWR?"  Part="1" 
+AR Path="/5FD83A3B/5FF93E4A" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 12150 4900 50  0001 C CNN
+F 1 "GND" H 12155 4977 50  0000 C CNN
+F 2 "" H 12150 5150 50  0001 C CNN
+F 3 "" H 12150 5150 50  0001 C CNN
+	1    12150 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF93E50
+P 12250 5150
+AR Path="/5FD151ED/5FF93E50" Ref="#PWR?"  Part="1" 
+AR Path="/5FD83A3B/5FF93E50" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 12250 4900 50  0001 C CNN
+F 1 "GND" H 12255 4977 50  0000 C CNN
+F 2 "" H 12250 5150 50  0001 C CNN
+F 3 "" H 12250 5150 50  0001 C CNN
+	1    12250 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11650 6050 10200 6050
+Wire Wire Line
+	11650 5850 11550 5850
+Wire Wire Line
+	11650 5750 11300 5750
+Wire Wire Line
+	11650 5650 11050 5650
+Wire Wire Line
+	11650 5550 10800 5550
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FF93E5B
+P 11550 6500
+AR Path="/5FD151ED/5FF93E5B" Ref="R?"  Part="1" 
+AR Path="/5FD83A3B/5FF93E5B" Ref="R9"  Part="1" 
+F 0 "R9" H 11618 6546 50  0000 L CNN
+F 1 "10k" H 11618 6455 50  0000 L CNN
+F 2 "" H 11550 6500 50  0001 C CNN
+F 3 "~" H 11550 6500 50  0001 C CNN
+	1    11550 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FF93E61
+P 11300 6500
+AR Path="/5FD151ED/5FF93E61" Ref="R?"  Part="1" 
+AR Path="/5FD83A3B/5FF93E61" Ref="R7"  Part="1" 
+F 0 "R7" H 11368 6546 50  0000 L CNN
+F 1 "10k" H 11368 6455 50  0000 L CNN
+F 2 "" H 11300 6500 50  0001 C CNN
+F 3 "~" H 11300 6500 50  0001 C CNN
+	1    11300 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FF93E67
+P 11050 6500
+AR Path="/5FD151ED/5FF93E67" Ref="R?"  Part="1" 
+AR Path="/5FD83A3B/5FF93E67" Ref="R6"  Part="1" 
+F 0 "R6" H 11118 6546 50  0000 L CNN
+F 1 "10k" H 11118 6455 50  0000 L CNN
+F 2 "" H 11050 6500 50  0001 C CNN
+F 3 "~" H 11050 6500 50  0001 C CNN
+	1    11050 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FF93E6D
+P 10800 6500
+AR Path="/5FD151ED/5FF93E6D" Ref="R?"  Part="1" 
+AR Path="/5FD83A3B/5FF93E6D" Ref="R5"  Part="1" 
+F 0 "R5" H 10868 6546 50  0000 L CNN
+F 1 "10k" H 10868 6455 50  0000 L CNN
+F 2 "" H 10800 6500 50  0001 C CNN
+F 3 "~" H 10800 6500 50  0001 C CNN
+	1    10800 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12150 6600 11850 6600
+Wire Wire Line
+	12150 6600 12150 6350
+Connection ~ 12150 6350
+Wire Wire Line
+	12150 6350 12150 6250
+Wire Wire Line
+	11550 6600 11300 6600
+Connection ~ 11550 6600
+Wire Wire Line
+	11300 6600 11050 6600
+Connection ~ 11300 6600
+Wire Wire Line
+	11050 6600 10800 6600
+Connection ~ 11050 6600
+Wire Wire Line
+	11550 6400 11550 5850
+Connection ~ 11550 5850
+Wire Wire Line
+	11300 6400 11300 5750
+Connection ~ 11300 5750
+Wire Wire Line
+	11050 6400 11050 5650
+Connection ~ 11050 5650
+Wire Wire Line
+	10800 6400 10800 5550
+Connection ~ 10800 5550
+$Comp
+L power:VDD #PWR?
+U 1 1 5FF93E89
+P 12150 6750
+AR Path="/5FD151ED/5FF93E89" Ref="#PWR?"  Part="1" 
+AR Path="/5FD83A3B/5FF93E89" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 12150 6600 50  0001 C CNN
+F 1 "VDD" H 12165 6923 50  0000 C CNN
+F 2 "" H 12150 6750 50  0001 C CNN
+F 3 "" H 12150 6750 50  0001 C CNN
+	1    12150 6750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12150 6750 12150 6600
+Connection ~ 12150 6600
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FF93E91
+P 11850 6600
+AR Path="/5FD151ED/5FF93E91" Ref="#FLG?"  Part="1" 
+AR Path="/5FD83A3B/5FF93E91" Ref="#FLG03"  Part="1" 
+F 0 "#FLG03" H 11850 6675 50  0001 C CNN
+F 1 "PWR_FLAG" H 11850 6773 50  0000 C CNN
+F 2 "" H 11850 6600 50  0001 C CNN
+F 3 "~" H 11850 6600 50  0001 C CNN
+	1    11850 6600
+	-1   0    0    1   
+$EndComp
+Connection ~ 11850 6600
+Wire Wire Line
+	11850 6600 11550 6600
+Text Notes 1400 3600 0    197  ~ 0
+Add optical isolators
+Wire Wire Line
+	9900 5750 9900 5350
+Wire Wire Line
+	9400 5350 9900 5350
+Wire Wire Line
+	9900 5750 11300 5750
+Wire Wire Line
+	9750 5650 9750 6050
+Wire Wire Line
+	9400 6050 9750 6050
+Wire Wire Line
+	9750 5650 11050 5650
+Wire Wire Line
+	9400 5550 10800 5550
+Wire Wire Line
+	9600 5850 9600 5450
+Wire Wire Line
+	9400 5450 9600 5450
+Wire Wire Line
+	9600 5850 11550 5850
+Text Label 10200 6050 2    50   ~ 0
+NRST
+Text Label 7500 3850 2    50   ~ 0
+NRST
+Wire Wire Line
+	7000 4600 6700 4600
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 600419CE
+P 7450 4450
+F 0 "#FLG0102" H 7450 4525 50  0001 C CNN
+F 1 "PWR_FLAG" H 7450 4623 50  0000 C CNN
+F 2 "" H 7450 4450 50  0001 C CNN
+F 3 "~" H 7450 4450 50  0001 C CNN
+	1    7450 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 7450 4450
+Wire Wire Line
+	7450 4450 7000 4450
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 60042766
+P 7200 4550
+F 0 "#FLG0104" H 7200 4625 50  0001 C CNN
+F 1 "PWR_FLAG" H 7200 4723 50  0000 C CNN
+F 2 "" H 7200 4550 50  0001 C CNN
+F 3 "~" H 7200 4550 50  0001 C CNN
+	1    7200 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7200 4550
+Wire Wire Line
+	7200 4550 7600 4550
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 60043C2F
+P 7600 4650
+F 0 "#FLG0105" H 7600 4725 50  0001 C CNN
+F 1 "PWR_FLAG" H 7600 4823 50  0000 C CNN
+F 2 "" H 7600 4650 50  0001 C CNN
+F 3 "~" H 7600 4650 50  0001 C CNN
+	1    7600 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7600 4650 7550 4650
+Connection ~ 7600 4650
 $EndSCHEMATC
