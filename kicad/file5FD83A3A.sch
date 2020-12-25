@@ -1063,7 +1063,7 @@ $EndComp
 Connection ~ 11850 6600
 Wire Wire Line
 	11850 6600 11550 6600
-Text Notes 1400 3600 0    197  ~ 0
+Text Notes 1600 2000 0    197  ~ 0
 Add optical isolators
 Wire Wire Line
 	9900 5750 9900 5350
