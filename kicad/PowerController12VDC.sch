@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 1 6
+Sheet 1 5
 Title "KQ9P Power Controller 12VDC"
 Date "2020-12-08"
 Rev "V1"
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 2450 8650 2250 1350
+S 1850 1800 2250 1350
 U 5FD25DF9
 F0 "Power Supply 5V 3V3" 157
 F1 "file5FD25DF8.sch" 50
@@ -46,17 +46,5 @@ S 10800 1050 5350 2550
 U 5FD3D2E0
 F0 "Relay Board" 157
 F1 "file5FD3D2DF.sch" 50
-$EndSheet
-$Sheet
-S 4500 1000 3650 2400
-U 5FDA5732
-F0 "Power Regulator Board" 157
-F1 "file5FDA5731.sch" 50
-F2 "PGOOD" O R 8150 2200 118
-F3 "VREG" O R 8150 1300 118
-F4 "ISMON" O R 8150 1600 118
-F5 "RUNSTOP" I R 8150 2500 118
-F6 "VCTL1" I R 8150 2800 118
-F7 "VCTL2" I R 8150 3100 118
 $EndSheet
 $EndSCHEMATC
