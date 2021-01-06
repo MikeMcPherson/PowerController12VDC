@@ -82,7 +82,7 @@ $EndComp
 Wire Wire Line
 	8250 5650 9200 5650
 Wire Wire Line
-	9200 5650 9200 6350
+	9200 5650 9200 5900
 Wire Wire Line
 	9200 7350 8100 7350
 Wire Wire Line
@@ -1223,4 +1223,20 @@ $EndComp
 Connection ~ 3150 5550
 Wire Wire Line
 	3150 5550 3650 5550
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FEAC77A
+P 9300 5900
+F 0 "#PWR?" H 9300 5750 50  0001 C CNN
+F 1 "+3V3" V 9315 6028 50  0000 L CNN
+F 2 "" H 9300 5900 50  0001 C CNN
+F 3 "" H 9300 5900 50  0001 C CNN
+	1    9300 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 5900 9200 5900
+Connection ~ 9200 5900
+Wire Wire Line
+	9200 5900 9200 6350
 $EndSCHEMATC
